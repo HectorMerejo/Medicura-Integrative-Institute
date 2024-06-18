@@ -3,12 +3,19 @@ body {
   background-color: #f2ede9;
 }
 
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .div-logo {
@@ -28,7 +35,15 @@ img {
   color:#51575d;
 }
 
-.nav-links ul {
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push navigation to the right */
+  gap: 20px;
+}
+
+.nav-links ul,
+.external-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -36,12 +51,14 @@ img {
     align-items: center; /* Align items vertically */
 }
 
-.nav-links > ul > li {
+.nav-links > ul > li,
+.external-links > ul > li {
   position: relative;
   margin-right: 10px; /* Add margin between main links */
 }
 
-.nav-links a {
+.nav-links a,
+.external-links a {
   color:#51575d;
   text-decoration: none;
   padding: 10px 15px;
@@ -49,10 +66,10 @@ img {
   transition: background-color 0.3s;
 }
 
-.nav-links > ul > li::after {
+.nav-links > ul > li:not(.external-link)::after {
   content: ' \25BC';  /* Unicode character for down arrow */
   font-size: 0.8em;  /* Adjust size as needed */
-   margin-left: .5px;  /*Space between text and arrow */
+  margin-left: 5px;  /* Space between text and arrow */
 }
 
 /* Dropdown menu styles */
