@@ -1,45 +1,38 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 body {
   margin: 0;
   background-color: #f2ede9;
 }
 
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Center all items horizontally */
+  align-items: center; /* Center all items vertically */
   padding: 10px 20px;
   background-color: white;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .div-logo {
   display: flex;
-  align-items: center;
+  align-items: center; /* Push the logo to the left */
+  margin-left: 20px; /* Add margin to the left */
 }
 
 img {
-  height: 100px;
+  height: 125px;
   border-radius: 50%;
-  margin-right: 20px; /* Increase space between logo and title */
-}
-
-.div-logo h1 {
-  margin: 0;
-  font-size: 35px;
-  color:#51575d;
+  margin-right: 20px;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
-  margin-left: auto; /* Push navigation to the right */
-  gap: 20px;
+  justify-content: center; /* Center all links horizontally */
 }
 
 .nav-links ul,
@@ -54,16 +47,27 @@ img {
 .nav-links > ul > li,
 .external-links > ul > li {
   position: relative;
-  margin-right: 10px; /* Add margin between main links */
+  margin-right: 8px; /* Add margin between main links */
 }
 
 .nav-links a,
 .external-links a {
   color:#51575d;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 5px;
   position: relative;
   transition: background-color 0.3s;
+}
+
+.nav-button button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #51575d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: 2px solid #51575d;
+  margin-right: 50px; /* Add margin to the right */
 }
 
 .nav-links > ul > li:not(.external-link)::after {
@@ -79,12 +83,13 @@ img {
   top: 100%;  /* Position below the parent link */
   left: 0;
   background-color: white;
-  padding: 10px 0;
+  padding: 2px 0;
   list-style: none;
   margin: 0;
   min-width: 150px;
   z-index: 1000;
   white-space: nowrap; 
+  border: 1px solid #666; /* Add border around the dropdown */
 }
 
 .nav-links .dropdown li {
@@ -111,3 +116,4 @@ img {
 .nav-links > ul > li:hover .dropdown {
   display: block;
 }
+
