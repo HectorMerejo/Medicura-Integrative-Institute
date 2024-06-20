@@ -13,13 +13,35 @@
       rel="stylesheet"
     />
     <!-- Fonts End -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script src="photoReel.js" defer></script>
   </head>
   <body>
     <nav class="navbar">
-      <!-- logo and title div-->
+      <!-- logo div-->
       <div class="div-logo">
         <img src="images/dr_karl.png" alt="Dr Karls Logo" />
-        <!-- <h1>DR KARL</h1> -->
       </div>
 
       <!-- nav bar div-->
@@ -69,16 +91,14 @@
       </div>
     </nav>
 
-    <div>
-      <img class="slide" src="images/reel_images/welcome.jpg" alt="welcome" />
-      <img class="slide" src="images/reel_images/herbs.jpg" alt="herbs" />
+    <div class="photo-reel">
+      <img src="images/reel_images/welcome.jpg" alt="welcome" class="visible" />
+      <img src="images/reel_images/herbs.jpg" alt="herbs" class="hidden" />
       <img
-        class="slide"
         src="images/reel_images/cupping_therapy.jpg"
         alt="cuppingtherapy"
+        class="hidden"
       />
     </div>
   </body>
-
-  <script src="photoReel.js" defer></script>
 </html>

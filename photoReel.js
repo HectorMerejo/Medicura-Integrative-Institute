@@ -1,16 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-  let slides = document.querySelectorAll(".slide");
+// JavaScript for Photo Reel
+document.addEventListener('DOMContentLoaded', (event) => {
+  const slides = document.querySelectorAll('.photo-reel img');
   let currentSlide = 0;
 
-  function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-  }
+  // Customize these values
+  const startDelay = 3000; // Time in milliseconds before the slideshow starts
+  const slideDuration = 7000; // Time in milliseconds each slide is shown
 
-  function nextSlide() {
+  const showNextSlide = () => {
+    slides[currentSlide].classList.remove('visible');
+    slides[currentSlide].classList.add('hidden');
     currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
+    slides[currentSlide].classList.remove('hidden');
+    slides[currentSlide].classList.add('visible');
+  };
 
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  // Start the slideshow after the startDelay
+  setTimeout(() => {
+    showNextSlide();
+    setInterval(showNextSlide, slideDuration);
+  }, startDelay);
 });

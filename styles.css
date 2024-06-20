@@ -23,10 +23,8 @@ body {
   margin-left: 20px; /* Add margin to the left */
 }
 
-img {
-  height: 125px;
-  border-radius: 50%;
-  margin-right: 20px;
+.div-logo > img {
+  height: 150px;
 }
 
 .nav-container {
@@ -119,31 +117,29 @@ img {
 
 /* Photo Reel */
 
+/* Add this style block or put these styles in your CSS file */
 .photo-reel {
-  width: 100%;
-  overflow: hidden;
   position: relative;
-}
-
-.slide {
   width: 100%;
-  display: none;
+  height: 600px; /* Adjust height as needed */
+  overflow: hidden;
 }
 
-.slide.active {
-  display: block;
-  animation: fade 1.5s ease-in-out infinite;
+.photo-reel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateX(100%);
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.photo-reel img.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.photo-reel img.hidden {
+  transform: translateX(-100%);
 }
 
