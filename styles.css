@@ -15,6 +15,10 @@ body {
   background-color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  top: 0; /* Position it at the very top */
+  width: 100%; /* Full width of the viewport */
+  z-index: 1000; /* Ensure it sits above other content */
 }
 
 .div-logo {
@@ -119,9 +123,10 @@ body {
 
 /* Add this style block or put these styles in your CSS file */
 .photo-reel {
+  margin-top: 135px; /* Adjust the value to match the height of your navbar */
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 700px; /* Adjust height as needed */
   overflow: hidden;
 }
 
@@ -143,3 +148,45 @@ body {
   transform: translateX(-100%);
 }
 
+/* Tile container styling */
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
+  gap: 10px; /* Reduce gap between tiles for closer spacing */
+  padding: 5px; /* Padding around the tile container */
+  margin-top: 20px; /* Space below the photo reel */
+  justify-content: center; /* Center the tiles in the container */
+}
+
+/* Individual tile styling */
+.tile {
+  background-color: white;
+  border: 1px solid #ccc; /* Border around each tile */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content fits within the tile */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  cursor: pointer; /* Change cursor to pointer for clickable effect */
+  transition: transform 0.3s; /* Animation on hover */
+  max-width: 300px; /* Maximum width for each tile */
+  margin: 0 auto; /* Center align tiles */
+}
+
+.tile:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.tile img {
+  width: 100%; /* Full width image */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.tile-description {
+  padding: 10px; /* Padding inside the description area */
+  text-align: center; /* Centered text */
+}
+
+.tile-description p {
+  margin: 0; /* Remove default margin */
+  color: #51575d; /* Description text color */
+}
