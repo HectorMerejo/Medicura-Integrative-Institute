@@ -148,14 +148,32 @@ body {
   transform: translateX(-100%);
 }
 
+
+/* Title container styling */
+.title-container {
+  display: flex;
+  justify-content: center; /* Center the title horizontally */
+  align-items: center; /* Center the title vertically */
+  margin-top: 20px; /* Add margin to the top */
+}
+
+.title-container h1 {
+  font-size: 3em; /* Adjust font size */
+  color: #51575d; /* Title color */
+  font-family: "Josefin Slab", serif;
+  font-weight: 25;
+}
+
 /* Tile container styling */
 .tile-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
-  gap: 10px; /* Reduce gap between tiles for closer spacing */
-  padding: 5px; /* Padding around the tile container */
+  gap: 100px; /* Reduce gap between tiles for closer spacing */
+  padding: 20px; /* Padding around the tile container */
   margin-top: 20px; /* Space below the photo reel */
   justify-content: center; /* Center the tiles in the container */
+  max-width: 1000px; /* Adjust the maximum width of the tile container */
+  margin: auto; /* Center the tile container horizontally */
 }
 
 /* Individual tile styling */
@@ -167,8 +185,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   cursor: pointer; /* Change cursor to pointer for clickable effect */
   transition: transform 0.3s; /* Animation on hover */
-  max-width: 300px; /* Maximum width for each tile */
-  margin: 0 auto; /* Center align tiles */
+  max-width:300px; /* Maximum width for each tile */
 }
 
 .tile:hover {
@@ -177,16 +194,54 @@ body {
 
 .tile img {
   width: 100%; /* Full width image */
-  height: 200px; /* Fixed height for all images */
+  height: 175px; /* Fixed height for all images */
   object-fit: cover; /* Maintain aspect ratio and cover the entire area */
 }
 
 .tile-description {
   padding: 10px; /* Padding inside the description area */
   text-align: center; /* Centered text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
 }
 
 .tile-description p {
   margin: 0; /* Remove default margin */
   color: #51575d; /* Description text color */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  padding: 10px;
+}
+
+.tile-description h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 25px; /* Adjust font size */
+  color: #51575d; /* Title color */
+  font-family: "Josefin Slab", serif;
+  font-weight: 25;
+  text-align: left;
+  padding: 10px 20px 3px 10px;
+}
+
+.tile-button {
+  padding: 8px 16px; /* Reduced padding to make the button smaller */
+  margin-top: 10px; /* Space above the button */
+  background-color: #51575d; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: "Poppins", sans-serif; /* Button font */
+  font-size: 14px; /* Adjust font size to make the button smaller */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  text-decoration: none; /* Ensure no underline for links */
+  display: inline-block; /* Ensure the link behaves like a button */
+}
+
+.tile-button:hover {
+  background-color: #40464d; /* Darker background on hover */
 }
