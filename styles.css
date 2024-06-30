@@ -27,7 +27,7 @@ body {
   margin-left: 20px; /* Add margin to the left */
 }
 
-.div-logo > img {
+.div-logo > a > img {
   height: 150px;
 }
 
