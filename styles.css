@@ -21,6 +21,10 @@ body {
   z-index: 1000; /* Ensure it sits above other content */
 }
 
+.content {
+  padding-top: 150px; /* Adjust based on the height of your navbar */
+}
+
 .div-logo {
   display: flex;
   align-items: center; /* Push the logo to the left */
@@ -174,6 +178,87 @@ body {
   justify-content: center; /* Center the tiles in the container */
   max-width: 1000px; /* Adjust the maximum width of the tile container */
   margin: auto; /* Center the tile container horizontally */
+}
+
+/* Team section styling */
+.team-title-container {
+  text-align: center;
+  margin-top: 75px; /* Space between the navbar and the headline */
+  margin-bottom: 40px; /* Space below the title */
+  position: relative;
+}
+
+.team-title {
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.5rem;
+  color: #333;
+  display: inline-block;
+  margin-bottom: 10px; /* Space between the title and the line */
+  position: relative;
+}
+
+.team-title::after {
+  content: '';
+  display: block;
+  width: 200px; /* Fixed width for the line */
+  height: 2px;
+  background-color: #c4c2bd;
+  margin: 10px auto 0; /* Space between the title and the line */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.team-member {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-member h2 {
+  margin: 15px 0 5px;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Josefin Slab", serif;
+  font-weight: 25;
+}
+
+.team-member p {
+  margin: 0 0 15px;
+  color: #666;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #51575d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #333;
 }
 
 /* Individual tile styling */
