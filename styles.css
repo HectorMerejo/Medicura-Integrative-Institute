@@ -191,7 +191,8 @@ body {
 .team-title {
   font-family: 'Josefin Slab', serif;
   font-size: 2.5rem;
-  color: #333;
+  font-weight: lighter;
+  color: #51575d;
   display: inline-block;
   margin-bottom: 10px; /* Space between the title and the line */
   position: relative;
@@ -239,7 +240,7 @@ body {
   font-size: 1.5rem;
   color: #333;
   font-family: "Josefin Slab", serif;
-  font-weight: 25;
+  font-weight: lighter;
 }
 
 .team-member p {
@@ -260,6 +261,57 @@ body {
 .learn-more-btn:hover {
   background-color: #333;
 }
+
+/* Bio Styling */
+
+.bio-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  padding: 100px; /* Add padding to create space around content */
+  margin-bottom: 20px; /* Space between each bio section */
+}
+
+.bio-image {
+  flex: 0 0 auto; /* Allow image to maintain its size */
+  margin-right: 20px; /* Adjust spacing between image and text */
+}
+
+.bio-image img {
+  width: 500px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  
+}
+
+.bio-text {
+  flex: 1; /* Allow text to take remaining space */
+}
+
+.bio-text h2 {
+  font-size: 24px; /* Adjust heading size */
+}
+
+.bio-text p {
+  font-size: 16px; /* Adjust paragraph text size */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+
+.certifications {
+  margin-top: auto; /* Push certifications to the bottom */
+}
+
+.certifications h3 {
+  font-size: 18px; /* Adjust heading size */
+}
+
+.certifications ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.certifications li {
+  margin-bottom: 5px; /* Space between each certification */
+}
+
 
 /* Individual tile styling */
 .tile {
