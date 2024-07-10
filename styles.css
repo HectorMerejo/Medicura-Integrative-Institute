@@ -126,7 +126,7 @@ body {
 /* Photo Reel */
 
 /* Add this style block or put these styles in your CSS file */
-.photo-reel {
+.photo-reel{
   margin-top: 135px; /* Adjust the value to match the height of your navbar */
   position: relative;
   width: 100%;
@@ -193,9 +193,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   transform: translate(-50%, -50%);
+  color: white;
 }
 
 .photo-container.active .text-overlay-retreat {
