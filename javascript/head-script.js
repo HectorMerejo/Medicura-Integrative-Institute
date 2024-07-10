@@ -82,3 +82,30 @@ var scriptPhotoReel = document.createElement('script');
 scriptPhotoReel.setAttribute('src', '/javascript/photoReel.js');
 scriptPhotoReel.setAttribute('defer', '');
 document.head.appendChild(scriptPhotoReel);
+
+// Create and append script
+var scriptPhotoReel = document.createElement('script');
+scriptPhotoReel.setAttribute('src', '/javascript/photoReelText.js');
+scriptPhotoReel.setAttribute('defer', '');
+document.head.appendChild(scriptPhotoReel);
+
+// Create first <link> element for preconnecting to fonts.googleapis.com
+var link1 = document.createElement("link");
+link1.rel = "preconnect";
+link1.href = "https://fonts.googleapis.com";
+document.head.appendChild(link1);
+
+// Create second <link> element for preconnecting to fonts.gstatic.com with crossorigin attribute
+var link2 = document.createElement("link");
+link2.rel = "preconnect";
+link2.href = "https://fonts.gstatic.com";
+link2.crossOrigin = true;
+document.head.appendChild(link2);
+
+// Create third <link> element for linking the stylesheet
+var link3 = document.createElement("link");
+link3.rel = "stylesheet";
+link3.href = "https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
+document.head.appendChild(link3);
+
+

@@ -43,11 +43,11 @@ body {
 
 .nav-links ul,
 .external-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center; /* Align items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .nav-links > ul > li,
@@ -134,7 +134,7 @@ body {
   overflow: hidden;
 }
 
-.photo-reel img {
+.photo-reel img, .text-overlay-retreat {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -143,15 +143,64 @@ body {
   transform: translateX(100%);
 }
 
-.photo-reel img.visible {
+.photo-reel img.visible, .text-overlay-retreat.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.photo-reel img.hidden {
+.photo-reel img.hidden, .text-overlay-retreat.hidden {
   transform: translateX(-100%);
 }
 
+.photo-reel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay color */
+  z-index: 1; /* Ensure it's above the image */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust as needed to position from the left edge */
+  z-index: 2;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  padding: 20px;
+  max-width: 600px; /* Adjust the width to make text stack */
+  width: 100%; /* Ensure it uses the max-width value */
+  font-family: "Josefin Slab", serif;
+  
+}
+
+.overlay-text p {
+  font-size: 5em;
+  margin: 0;
+}
+
+.text-overlay-retreat {
+  z-index: 2;
+  max-width: 600px;
+  width: 100%;
+  font-family: "Josefin Slab", serif;
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-container.active .text-overlay-retreat {
+  display: block;
+}
 
 /* Title container styling */
 .title-container {
