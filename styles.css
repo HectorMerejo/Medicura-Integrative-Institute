@@ -230,6 +230,96 @@ body {
   margin: auto; /* Center the tile container horizontally */
 }
 
+/* Blog Title container */
+.title-container-blog {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.title-container-blog h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.title-container-blog p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Blog container */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-post h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+.blog-post .post-date {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.blog-post .post-excerpt {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
 /* Team section styling */
 .team-title-container {
   text-align: center;
