@@ -256,6 +256,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  padding: 0 20px; /* Add padding inside the blog container */
+
 }
 
 .blog-post {
@@ -265,6 +267,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .blog-post:hover {
