@@ -45,217 +45,232 @@
     <script src="/javascript/footer.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <!-- logo div-->
-      <div class="div-logo">
-        <a href="index.html"
-          ><img src="images/dr_karl.png" alt="Dr Karls Logo"
-        /></a>
-      </div>
-
-      <!-- nav bar div-->
-      <div class="nav-container">
-        <div class="nav-links">
-          <ul>
-            <li>
-              <a href="#">LOCATIONS</a>
-              <ul class="dropdown">
-                <li><a href="html/newYork.html">New York</a></li>
-                <li><a href="html/florida.html">Florida</a></li>
-                <li><a href="html/telemedicine.html">Telemedicine</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-              <ul class="dropdown">
-                <li><a href="html/team.html">TEAM</a></li>
-                <li><a href="#helpcenter">HELP CENTER</a></li>
-                <li><a href="html/blog.html">BLOG</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">OUR SPECIALITIES</a>
-              <ul class="dropdown">
-                <li><a href="wellnessRetreat.html">Wellness Retreat</a></li>
-              </ul>
-            </li>
-          </ul>
+    <div class="wrapper">
+      <nav class="navbar">
+        <!-- logo div-->
+        <div class="div-logo">
+          <a href="index.html"
+            ><img src="images/dr_karl.png" alt="Dr Karls Logo"
+          /></a>
         </div>
-        <div class="external-links">
-          <ul>
-            <li><a href="#">SERVICES</a></li>
-            <!-- <li><a href="#">PRICING</a></li> -->
-          </ul>
+
+        <!-- nav bar div-->
+        <div class="nav-container">
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="#">LOCATIONS</a>
+                <ul class="dropdown">
+                  <li><a href="html/newYork.html">New York</a></li>
+                  <li><a href="html/florida.html">Florida</a></li>
+                  <li><a href="html/telemedicine.html">Telemedicine</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">ABOUT</a>
+                <ul class="dropdown">
+                  <li><a href="html/team.html">TEAM</a></li>
+                  <li><a href="#helpcenter">HELP CENTER</a></li>
+                  <li><a href="html/blog.html">BLOG</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">OUR SPECIALITIES</a>
+                <ul class="dropdown">
+                  <li><a href="wellnessRetreat.html">Wellness Retreat</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="external-links">
+            <ul>
+              <li><a href="#">SERVICES</a></li>
+              <!-- <li><a href="#">PRICING</a></li> -->
+            </ul>
+          </div>
         </div>
+
+        <!-- button -->
+        <div class="nav-button">
+          <button>Book Now</button>
+        </div>
+      </nav>
+
+      <div class="photo-reel">
+        <img
+          src="images/reel_images/welcome.jpg"
+          alt="welcome"
+          class="visible"
+        />
+        <img src="images/reel_images/herbs.jpg" alt="herbs" class="hidden" />
+        <img
+          src="images/reel_images/cupping_therapy.jpg"
+          alt="cuppingtherapy"
+          class="hidden"
+        />
       </div>
 
-      <!-- button -->
-      <div class="nav-button">
-        <button>Book Now</button>
+      <!-- Tile Section -->
+      <div class="title-container">
+        <h1>Personalized Services</h1>
       </div>
-    </nav>
+      <div class="tile-container">
+        <!-- Tile 1 -->
+        <div class="tile">
+          <img
+            src="images/tile_images/medical_examination.jpeg"
+            alt="examination"
+          />
+          <div class="tile-description">
+            <h3>Comprehensive Medical Examination</h3>
+            <p>
+              Schedule a personalized consultation with Dr. Karl for a
+              comprehensive examination utilizing a range of Traditional Chinese
+              Medicine techniques. The findings from this assessment can be
+              complemented by an array of additional services offered by
+              Medicura Integrative Institute.
+            </p>
+            <a href="/html/examination.html" class="tile-button">Learn More</a>
+          </div>
+        </div>
+        <!-- Tile 2 -->
+        <div class="tile">
+          <img
+            src="images/tile_images/acupuncture.jpeg"
+            alt="acupuncture therapy"
+          />
+          <div class="tile-description">
+            <h3>Acupuncture Therapy</h3>
+            <p>
+              Our practitioners work within an established clinical framework to
+              diagnose patterns of disharmony and perform personalized
+              treatments to restore and heal.
+            </p>
+            <a href="/html/acupuncture.html" class="tile-button">Learn More</a>
+          </div>
+        </div>
+        <!-- Tile 3 -->
+        <div class="tile">
+          <img src="images/tile_images/herbal_medicine.jpg" alt="Tile 2" />
+          <div class="tile-description">
+            <h3>Herbal Medicine</h3>
+            <p>
+              Herbal medicine has its origins in ancient cultures. It involves
+              the medicinal use of plants to treat disease and enhance general
+              health and wellbeing.
+            </p>
+            <a href="html/herbalMedicine.html" class="tile-button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Tile 4 -->
+        <div class="tile">
+          <img src="images/tile_images/cupping_therapy.jpg" alt="cupping" />
+          <div class="tile-description">
+            <h3>Cupping</h3>
+            <p>
+              Cupping therapy is an ancient alternative medicine technique that
+              involves placing special cups on the skin to create suction for a
+              few minutes.
+            </p>
+            <a href="html/cuppingTherapy.html" class="tile-button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Tile 5 -->
+        <div class="tile">
+          <img src="images/tile_images/gua_sha.jpg" alt="Gua Sha" />
+          <div class="tile-description">
+            <h3>Gua Sha</h3>
+            <p>
+              Gua sha (pronounced "gwa-shah") is a traditional Chinese medicine
+              (TCM) technique that involves scraping the skin with a
+              smooth-edged tool to promote healing and relieve health
+              conditions.
+            </p>
+            <a href="html/guaSha.html" class="tile-button">Learn More</a>
+          </div>
+        </div>
+        <!-- Tile 6 -->
+        <div class="tile">
+          <img
+            src="images/tile_images/injection_therapy.jpg"
+            alt="injection therapy"
+          />
+          <div class="tile-description">
+            <h3>Injection Therapy</h3>
+            <p>
+              Therapeutic injections are designed to reduce swelling by
+              delivering anti-inflammatory agents directly to the affected joint
+              or muscle. This targeted approach helps decrease excess fluid and
+              inhibits the production of pain-inducing chemicals associated with
+              inflammation.
+            </p>
+            <a href="html/injectionTherapy.html" class="tile-button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Tile 7 -->
+        <div class="tile">
+          <img src="images/tile_images/one_day_detox.jpg" alt="detox" />
+          <div class="tile-description">
+            <h3>6 Hour Detox Program</h3>
+            <p>
+              Revitalize your body with our One Day Detox Cleanse program. If
+              you're experiencing fatigue and sluggishness, a detox cleanse can
+              assist in eliminating toxins and restoring your body's optimal
+              function.
+            </p>
+            <a href="html/detoxProgram.html" class="tile-button">Learn More</a>
+          </div>
+        </div>
+        <!-- Tile 8 -->
+        <div class="tile">
+          <img
+            src="images/tile_images/wellness_retreat.jpg"
+            alt="wellness retreat"
+          />
+          <div class="tile-description">
+            <h3>Wellness Retreat</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
+              necessitatibus voluptatem recusandae vitae qui rem itaque
+              doloribus odio quas harum, in maxime labore. Quasi neque modi est
+              ex laudantium quia.
+            </p>
+            <a href="html/wellnessRetreat.html" class="tile-button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Tile 9 -->
+        <div class="tile">
+          <img
+            src="images/tile_images/communitywellness.jpg"
+            alt="community wellness"
+          />
+          <div class="tile-description">
+            <h3>Community Wellness</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores laborum ad nesciunt, enim hic impedit quo architecto?
+              Quidem eos ducimus eligendi explicabo eveniet molestiae ab! Porro
+              voluptates minima assumenda beatae.
+            </p>
+            <a href="html/communityWellness.html " class="tile-button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Add more tiles as needed -->
+      </div>
+      <!-- Tile Container ends -->
 
-    <div class="photo-reel">
-      <img src="images/reel_images/welcome.jpg" alt="welcome" class="visible" />
-      <img src="images/reel_images/herbs.jpg" alt="herbs" class="hidden" />
-      <img
-        src="images/reel_images/cupping_therapy.jpg"
-        alt="cuppingtherapy"
-        class="hidden"
-      />
+      <!-- Footer placeholder -->
+      <div id="footer-placeholder"></div>
     </div>
-
-    <!-- Tile Section -->
-    <div class="title-container">
-      <h1>Personalized Services</h1>
-    </div>
-    <div class="tile-container">
-      <!-- Tile 1 -->
-      <div class="tile">
-        <img
-          src="images/tile_images/medical_examination.jpeg"
-          alt="examination"
-        />
-        <div class="tile-description">
-          <h3>Comprehensive Medical Examination</h3>
-          <p>
-            Schedule a personalized consultation with Dr. Karl for a
-            comprehensive examination utilizing a range of Traditional Chinese
-            Medicine techniques. The findings from this assessment can be
-            complemented by an array of additional services offered by Medicura
-            Integrative Institute.
-          </p>
-          <a href="/html/examination.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 2 -->
-      <div class="tile">
-        <img
-          src="images/tile_images/acupuncture.jpeg"
-          alt="acupuncture therapy"
-        />
-        <div class="tile-description">
-          <h3>Acupuncture Therapy</h3>
-          <p>
-            Our practitioners work within an established clinical framework to
-            diagnose patterns of disharmony and perform personalized treatments
-            to restore and heal.
-          </p>
-          <a href="/html/acupuncture.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 3 -->
-      <div class="tile">
-        <img src="images/tile_images/herbal_medicine.jpg" alt="Tile 2" />
-        <div class="tile-description">
-          <h3>Herbal Medicine</h3>
-          <p>
-            Herbal medicine has its origins in ancient cultures. It involves the
-            medicinal use of plants to treat disease and enhance general health
-            and wellbeing.
-          </p>
-          <a href="html/herbalMedicine.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 4 -->
-      <div class="tile">
-        <img src="images/tile_images/cupping_therapy.jpg" alt="cupping" />
-        <div class="tile-description">
-          <h3>Cupping</h3>
-          <p>
-            Cupping therapy is an ancient alternative medicine technique that
-            involves placing special cups on the skin to create suction for a
-            few minutes.
-          </p>
-          <a href="html/cuppingTherapy.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 5 -->
-      <div class="tile">
-        <img src="images/tile_images/gua_sha.jpg" alt="Gua Sha" />
-        <div class="tile-description">
-          <h3>Gua Sha</h3>
-          <p>
-            Gua sha (pronounced "gwa-shah") is a traditional Chinese medicine
-            (TCM) technique that involves scraping the skin with a smooth-edged
-            tool to promote healing and relieve health conditions.
-          </p>
-          <a href="html/guaSha.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 6 -->
-      <div class="tile">
-        <img
-          src="images/tile_images/injection_therapy.jpg"
-          alt="injection therapy"
-        />
-        <div class="tile-description">
-          <h3>Injection Therapy</h3>
-          <p>
-            Therapeutic injections are designed to reduce swelling by delivering
-            anti-inflammatory agents directly to the affected joint or muscle.
-            This targeted approach helps decrease excess fluid and inhibits the
-            production of pain-inducing chemicals associated with inflammation.
-          </p>
-          <a href="html/injectionTherapy.html" class="tile-button"
-            >Learn More</a
-          >
-        </div>
-      </div>
-      <!-- Tile 7 -->
-      <div class="tile">
-        <img src="images/tile_images/one_day_detox.jpg" alt="detox" />
-        <div class="tile-description">
-          <h3>6 Hour Detox Program</h3>
-          <p>
-            Revitalize your body with our One Day Detox Cleanse program. If
-            you're experiencing fatigue and sluggishness, a detox cleanse can
-            assist in eliminating toxins and restoring your body's optimal
-            function.
-          </p>
-          <a href="html/detoxProgram.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 8 -->
-      <div class="tile">
-        <img
-          src="images/tile_images/wellness_retreat.jpg"
-          alt="wellness retreat"
-        />
-        <div class="tile-description">
-          <h3>Wellness Retreat</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-            necessitatibus voluptatem recusandae vitae qui rem itaque doloribus
-            odio quas harum, in maxime labore. Quasi neque modi est ex
-            laudantium quia.
-          </p>
-          <a href="html/wellnessRetreat.html" class="tile-button">Learn More</a>
-        </div>
-      </div>
-      <!-- Tile 9 -->
-      <div class="tile">
-        <img
-          src="images/tile_images/communitywellness.jpg"
-          alt="community wellness"
-        />
-        <div class="tile-description">
-          <h3>Community Wellness</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            laborum ad nesciunt, enim hic impedit quo architecto? Quidem eos
-            ducimus eligendi explicabo eveniet molestiae ab! Porro voluptates
-            minima assumenda beatae.
-          </p>
-          <a href="html/communityWellness.html " class="tile-button"
-            >Learn More</a
-          >
-        </div>
-      </div>
-      <!-- Add more tiles as needed -->
-    </div>
-    <!-- Tile Container ends -->
   </body>
-  <!-- Footer placeholder -->
-  <footer id="footer-placeholder"></footer>
 </html>

@@ -30,7 +30,50 @@ html, body {
 }
 
 .content {
+  flex: 1;
   padding-top: 150px; /* Adjust based on the height of your navbar */
+  padding-bottom: 60px; /* Ensure space between content and footer */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #007BFF;
 }
 
 .div-logo {
@@ -320,18 +363,6 @@ html, body {
   background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-
 /* Team section styling */
 .team-title-container {
   text-align: center;
@@ -535,48 +566,6 @@ footer {
   background-color: #40464d; /* Darker background on hover */
 }
 
-/* Footer */
-
-/* Footer Styling */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 40px 20px;
-  font-family: 'Poppins', sans-serif;
-  width: 100%; 
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-section h4 {
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  color: #f2f2f2;
-}
-
-.footer-section p,
-.footer-section a {
-  color: #ccc;
-  margin: 5px 0;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: #007BFF;
-}
-
 /* Newsletter Form */
 .newsletter input {
   padding: 10px;
@@ -611,7 +600,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Footer Bottom
+/* Footer bottom styling */
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
@@ -629,4 +618,5 @@ footer {
 
 .footer-bottom a:hover {
   color: #007BFF;
-} */
+}
+
