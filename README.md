@@ -7,7 +7,7 @@ This repository hosts the source code for Dr. Karl's **Medicura Integrative Inst
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Demo](#demo-website)
+- [Demo](#demo)
 - [Contact](#contact)
 
 ## About the Project
