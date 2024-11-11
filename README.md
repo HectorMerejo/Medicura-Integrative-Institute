@@ -43,10 +43,11 @@ DrKarlWebsite/
 │   └── ...                 # More scripts
 ├── favicon_io/             # Icons and manifest for favicon
 └── README.md               # This README file
+```
 
 ## Demo
 
-![Website Demo](assets/demo.gif)
+![Website Demo](images/demo.gif)
 
 ## Contact
 
