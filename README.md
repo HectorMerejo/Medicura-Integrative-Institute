@@ -46,9 +46,10 @@ DrKarlWebsite/
 
 ## Demo
 
-![Website Demo](images/demo.gif)
+![Website Demo](assets/demo.gif)
 
 ## Contact
 
-Email: HMerejojr@gmail.com
+Developed by Hector Merejo. For questions, please reach out via HMerejojr@gmail.com (mailto:HMerejojr@gmail.com).
+
 
