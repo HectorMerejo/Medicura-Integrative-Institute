@@ -7,10 +7,7 @@ This repository hosts the source code for Dr. Karl's **Medicura Integrative Inst
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Demo](#demo-website)
 - [Contact](#contact)
 
 ## About the Project
@@ -46,3 +43,12 @@ DrKarlWebsite/
 │   └── ...                 # More scripts
 ├── favicon_io/             # Icons and manifest for favicon
 └── README.md               # This README file
+
+## Demo
+
+![Website Demo](images/demo.gif)
+
+## Contact
+
+Email: HMerejojr@gmail.com
+
