@@ -47,7 +47,7 @@ DrKarlWebsite/
 
 ## Demo
 
-![Imgur](https://github.com/user-attachments/assets/80baadf7-d901-4378-aabe-1fcc53c67306)
+<img width="1512" alt="Screenshot 2024-10-14 at 5 38 02 PM" src="https://github.com/user-attachments/assets/9a800d78-8566-440b-bd79-961af9c978e6" />
 
 ## Contact
 
