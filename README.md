@@ -47,7 +47,7 @@ DrKarlWebsite/
 
 ## Demo
 
-![Website Demo](https://i.imgur.com/Ovdy2EY.gif)
+![Imgur](https://github.com/user-attachments/assets/80baadf7-d901-4378-aabe-1fcc53c67306)
 
 ## Contact
 
