@@ -54,21 +54,21 @@ document.head.appendChild(linkFonts6);
 var linkFavicon1 = document.createElement('link');
 linkFavicon1.setAttribute('rel', 'apple-touch-icon');
 linkFavicon1.setAttribute('sizes', '180x180');
-linkFavicon1.setAttribute('href', '/favicon_io/apple-touch-icon.png');
+linkFavicon1.setAttribute('href', './favicon_io/apple-touch-icon.png');
 document.head.appendChild(linkFavicon1);
 
 var linkFavicon2 = document.createElement('link');
 linkFavicon2.setAttribute('rel', 'icon');
 linkFavicon2.setAttribute('type', 'image/png');
 linkFavicon2.setAttribute('sizes', '32x32');
-linkFavicon2.setAttribute('href', '/favicon_io/favicon-32x32.png');
+linkFavicon2.setAttribute('href', './favicon_io/favicon-32x32.png');
 document.head.appendChild(linkFavicon2);
 
 var linkFavicon3 = document.createElement('link');
 linkFavicon3.setAttribute('rel', 'icon');
 linkFavicon3.setAttribute('type', 'image/png');
 linkFavicon3.setAttribute('sizes', '16x16');
-linkFavicon3.setAttribute('href', '/favicon_io/favicon-16x16.png');
+linkFavicon3.setAttribute('href', './favicon_io/favicon-16x16.png');
 document.head.appendChild(linkFavicon3);
 
 // Create and append manifest link
@@ -79,7 +79,7 @@ document.head.appendChild(linkManifest);
 
 // Create and append script
 var scriptPhotoReel = document.createElement('script');
-scriptPhotoReel.setAttribute('src', '/javascript/photoReel.js');
+scriptPhotoReel.setAttribute('src', 'javascript/photoReel.js');
 scriptPhotoReel.setAttribute('defer', '');
 document.head.appendChild(scriptPhotoReel);
 
