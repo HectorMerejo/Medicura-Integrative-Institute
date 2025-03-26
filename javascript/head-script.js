@@ -14,7 +14,7 @@ document.title = 'Dr Karl - Wellness Center';
 // Create and append stylesheets
 var linkStylesheet = document.createElement('link');
 linkStylesheet.setAttribute('rel', 'stylesheet');
-linkStylesheet.setAttribute('href', '/styles.css');
+linkStylesheet.setAttribute('href', '../styles.css');
 document.head.appendChild(linkStylesheet);
 
 // Create and append font links
@@ -85,7 +85,7 @@ document.head.appendChild(scriptPhotoReel);
 
 // Create and append script
 var scriptPhotoReel = document.createElement('script');
-scriptPhotoReel.setAttribute('src', '/javascript/photoReelText.js');
+scriptPhotoReel.setAttribute('src', 'javascript/photoReelText.js');
 scriptPhotoReel.setAttribute('defer', '');
 document.head.appendChild(scriptPhotoReel);
 
