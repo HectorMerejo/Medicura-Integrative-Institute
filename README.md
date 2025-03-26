@@ -54,3 +54,4 @@ DrKarlWebsite/
 Developed by Hector Merejo. For questions, please reach out via HMerejojr@gmail.com
 
 
+# Medicura-Integrative-Institute
