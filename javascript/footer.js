@@ -1,9 +1,14 @@
-// footer.js
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("./js-html/footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-      })
-      .catch((error) => console.error("Error loading footer:", error));
+document.addEventListener("DOMContentLoaded", () => {
+  // Grab just the filename from the URL (e.g., "index.html" or "newYork.html")
+  const currentFile = window.location.pathname.split('/').pop();
+
+  // Determine path based on whether we're in a subfolder (like html/)
+  const pathToRoot = currentFile === 'index.html' || currentFile === '' ? './' : '../';
+
+  fetch(`${pathToRoot}js-html/footer.html`)
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Navbar load error:', err));
 });
