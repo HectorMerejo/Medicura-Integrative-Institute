@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const pathToRoot = location.pathname.includes('/html/') ? '../' : './';
+    const pathToRoot = location.pathname.includes('/js-html/') ? '../' : './';
   
     fetch(`${pathToRoot}js-html/navbar.html`)
       .then(res => res.text())
