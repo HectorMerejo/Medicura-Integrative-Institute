@@ -1,10 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const pathToRoot = location.pathname.includes('/js-html/') ? '../' : './';
-  
-    fetch(`${pathToRoot}js-html/footer.html`)
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
+// footer.js
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./js-html/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
       })
-      .catch(err => console.error('Footer load error:', err));
-  });  
+      .catch((error) => console.error("Error loading footer:", error));
+});
