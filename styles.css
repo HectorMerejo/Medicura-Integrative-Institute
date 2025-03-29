@@ -470,12 +470,25 @@ html, body {
 }
 
 .bio-text h2 {
-  font-size: 24px; /* Adjust heading size */
+  font-size: 24px;
+  text-align: center;
+  color: #51575d; /* Optional to match the site's aesthetic */
+  margin-bottom: 20px; /* Add spacing below the title */
 }
 
 .bio-text p {
   font-size: 16px; /* Adjust paragraph text size */
-  line-height: 1.5; /* Adjust line height for readability */
+  line-height: 1.8; /* Adjust line height for readability */
+  font-family: 'Poppins', sans-serif; /* Ensure the same font */
+  text-align: left; /* Align the text to the left */
+  margin: 20px auto; /* Add margin for spacing */
+  width: 80%; /* Limit the width of the paragraph for better readability */
+  max-width: 800px; /* Optional: Set a maximum width for the paragraph */
+  text-indent: 2em;
+}
+
+.bio-text p br {
+  margin-bottom: 10px; /* Optional: Add space between lines when using <br> */
 }
 
 .certifications {
