@@ -1,3 +1,25 @@
+/* Default (Desktop) order */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Make sure everything is in one row */
+.navbar > .div-logo {
+  order: 1;
+}
+.navbar > .nav-container {
+  order: 2;
+}
+.navbar > .nav-button {
+  order: 3;
+}
+.navbar > .hamburger {
+  display: none;
+}
+
 /* === HAMBURGER MENU === */
 .hamburger {
   display: none;
@@ -21,8 +43,6 @@
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
-    gap: 10px;
   }
 
   .nav-container,
@@ -32,23 +52,32 @@
     gap: 5px;
   }
 
+  .div-logo {
+    order: 1;
+    width: 100%;
+  }
+
   .nav-button {
-    margin-right: 0;
-    align-self: stretch;
+    order: 2;
+    width: 100%;
     text-align: center;
+    margin-top: 10px;
   }
 
   .hamburger {
     display: flex;
+    order: 3;
+    align-self: flex-end;
+    margin: 10px;
   }
 
   .nav-container {
+    order: 4;
     display: none;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     background-color: white;
     padding: 20px;
-    animation: slideDown 0.3s ease-in-out forwards;
   }
 
   .nav-container.show {
