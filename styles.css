@@ -773,3 +773,117 @@ html, body {
   color: #007BFF;
 }
 
+/* === MOBILE OPTIMIZATION === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .nav-container,
+  .external-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .nav-button {
+    margin-right: 0;
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .div-logo > a > img {
+    height: 100px;
+  }
+
+  .photo-reel {
+    height: 400px;
+  }
+
+  .overlay-text p {
+    font-size: 2em;
+  }
+
+  .title-container h1 {
+    font-size: 2em;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .tile-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .tile {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tile-description h3 {
+    font-size: 20px;
+  }
+
+  .tile-description p {
+    font-size: 14px;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .bio-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .bio-text p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .service-hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-section {
+    padding: 30px 20px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-now-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+}
