@@ -512,13 +512,16 @@ html, body {
 /* Individual tile styling */
 .tile {
   background-color: white;
-  border: 1px solid #ccc; /* Border around each tile */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Ensure content fits within the tile */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  cursor: pointer; /* Change cursor to pointer for clickable effect */
-  transition: transform 0.3s; /* Animation on hover */
-  max-width:300px; /* Maximum width for each tile */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 510px; /* 🔒 Adjust this height to what looks best */
 }
 
 .tile:hover {
@@ -526,17 +529,19 @@ html, body {
 }
 
 .tile img {
-  width: 100%; /* Full width image */
-  height: 175px; /* Fixed height for all images */
-  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  width: 100%;
+  height: 175px; /* This locks the height */
+  object-fit: cover; /* Ensures it crops instead of stretching */
+  flex-shrink: 0; /* Prevents it from shrinking in flex context */
 }
 
 .tile-description {
-  padding: 10px; /* Padding inside the description area */
-  text-align: center; /* Centered text */
+  padding: 10px;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  height: 100%;
+  justify-content: flex-start;
 }
 
 .tile-description p {
@@ -560,23 +565,126 @@ html, body {
 }
 
 .tile-button {
-  padding: 8px 16px; /* Reduced padding to make the button smaller */
-  margin-top: 10px; /* Space above the button */
-  background-color: #51575d; /* Button background color */
-  color: white; /* Button text color */
+  padding: 8px 16px;
+  background-color: #51575d;
+  color: white;
   border: none;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   text-align: center;
-  cursor: pointer; /* Pointer cursor on hover */
-  font-family: "Poppins", sans-serif; /* Button font */
-  font-size: 14px; /* Adjust font size to make the button smaller */
-  transition: background-color 0.3s; /* Smooth transition on hover */
-  text-decoration: none; /* Ensure no underline for links */
-  display: inline-block; /* Ensure the link behaves like a button */
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto; /* 👈 This is key */
 }
 
 .tile-button:hover {
   background-color: #40464d; /* Darker background on hover */
+}
+
+/* Service pages */
+
+.service-hero {
+  text-align: center;
+  padding: 140px 20px 0px;
+  background-color: #f2ede9;
+  font-family: "Josefin Slab", serif;
+}
+
+.service-hero h1 {
+  font-size: 3rem;
+  color: #51575d;
+  margin-bottom: 10px;
+}
+
+.service-hero p {
+  font-size: 1.2rem;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.service-section h2 {
+  font-family: "Josefin Slab", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #51575d;
+}
+
+.service-section h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.service-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.service-section ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #51575d;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+
+.service-section:nth-of-type(even) {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+/* Services button */
+
+.book-now-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.book-now-btn {
+  padding: 12px 30px;
+  background-color: white;
+  color: #51575d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: 2px solid #51575d;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-now-btn:hover {
+  background-color: #51575d;
+  color: white;
 }
 
 /* Newsletter Form */
