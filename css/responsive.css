@@ -4,8 +4,10 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* lay out in a row on mobile */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
   }
 
   .nav-container,
@@ -17,21 +19,19 @@
 
   .div-logo {
     order: 1;
-    width: 100%;
+    flex: 0 0 auto;
   }
 
   .nav-button {
     order: 2;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    flex: 0 0 auto;
+    margin: 0 10px;
   }
 
   .hamburger {
-    display: flex;
     order: 3;
-    align-self: flex-end;
-    margin: 10px;
+    display: flex;
+    flex: 0 0 auto;
   }
 
   .nav-container {
@@ -48,7 +48,7 @@
   }
 
   .div-logo > a > img {
-    height: 100px;
+    height: 80px;
   }
 
   .photo-reel {
