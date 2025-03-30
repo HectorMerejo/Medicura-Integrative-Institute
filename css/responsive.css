@@ -4,10 +4,12 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row; /* lay out in a row on mobile */
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 15px;
+    gap: 10px;
   }
 
   .nav-container,
@@ -18,14 +20,18 @@
   }
 
   .div-logo {
-    order: 1;
     flex: 0 0 auto;
+    margin-right: auto;
   }
 
   .nav-button {
-    order: 2;
     flex: 0 0 auto;
     margin: 0 10px;
+  }
+
+  .book-now-btn {
+    padding: 8px 20px;
+    font-size: 14px;
   }
 
   .hamburger {
