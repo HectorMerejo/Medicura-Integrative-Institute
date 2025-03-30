@@ -656,9 +656,21 @@ html, body {
   border-radius: 10px;
 }
 
+.service-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px; /* Keeps content responsive */
+}
+
+.service-section {
+  margin-bottom: 40px;
+}
+
 .service-section:nth-of-type(even) {
   background-color: #f9f9f9;
-  padding: 60px 20px;
+  padding: 60px 40px;
+  border-radius: 20px; /* 👈 This rounds the corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Services button */
@@ -685,6 +697,26 @@ html, body {
 .book-now-btn:hover {
   background-color: #51575d;
   color: white;
+}
+
+/* faq */
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  color: #51575d;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Newsletter Form */
