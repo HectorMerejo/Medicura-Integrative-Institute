@@ -9,13 +9,18 @@ metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
 document.head.appendChild(metaViewport);
 
 // Set title
-document.title = 'Dr Karl - Wellness Center';
+document.title = 'Medicura Integrative Institute';
 
 // Create and append stylesheets
 var linkStylesheet = document.createElement('link');
 linkStylesheet.setAttribute('rel', 'stylesheet');
 linkStylesheet.setAttribute('href', '../styles.css');
 document.head.appendChild(linkStylesheet);
+
+var responsiveStylesheet = document.createElement('link');
+responsiveStylesheet.setAttribute('rel', 'stylesheet');
+responsiveStylesheet.setAttribute('href', '../css/responsive.css');
+document.head.appendChild(responsiveStylesheet);
 
 // Create and append font links
 var linkFonts1 = document.createElement('link');
