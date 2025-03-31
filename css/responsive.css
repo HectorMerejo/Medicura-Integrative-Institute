@@ -44,10 +44,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-47%, -50%); /* ⬅️ adjust horizontal balance */
+    transform: translate(-40%, -50%); /* ⬅️ adjust horizontal balance */
   }
   
-
   .nav-button button {
     padding: 8px 20px;
     font-size: 14px;
