@@ -20,54 +20,54 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding: 10px 12px; /* smaller horizontal padding */
+    justify-content: space-between;
+    padding: 10px 16px;
+    gap: 8px;
   }
 
   .div-logo {
-    flex: 1;
+    flex: 0 0 auto;
+    margin-right: auto;
     display: flex;
     justify-content: flex-start;
-    margin-right: 10px;
   }
 
   .div-logo > a > img {
-    height: 65px;
+    height: 60px;
   }
 
   .nav-button {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
   }
 
-  .book-now-btn,
   .nav-button button {
-    padding: 8px 18px;
+    padding: 8px 20px;
     font-size: 14px;
+    border-radius: 20px;
     max-width: 120px;
-    width: 100%;
+    margin: 0 auto;
   }
 
   .hamburger {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    width: 22px;
-    height: 18px;
-    cursor: pointer;
+    width: 18px;         /* 👈 Shorter lines */
+    height: 14px;
+    margin-right: 10px;  /* 👈 Pull it in from the edge */
   }
-
+  
   .hamburger span {
     height: 2px;
     width: 100%;
     background-color: #51575d;
-    border-radius: 3px;
-    display: block;
+    border-radius: 2px;
   }
 
   .nav-container {
