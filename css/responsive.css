@@ -29,6 +29,10 @@
     margin-left: 0; /* Pull it flush left */
   }
 
+  .div-logo > a > img {
+    height: 60px;
+  }
+
   .nav-button {
     flex: 1;
     display: flex;
@@ -48,7 +52,7 @@
 
   .hamburger span {
     height: 2px;
-    width: 100%;
+    /* width: 100%; */
     background-color: #51575d;
     border-radius: 2px;
   }
