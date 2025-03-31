@@ -48,23 +48,26 @@
   }
 
   .hamburger {
-    flex: 1;
+    flex: 0 0 auto; /* Don’t stretch */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-    width: 10px;         /* Shorter lines */
-    height: 16px;
-    margin-right: 5px;   /* Tighter to edge, but not glued */
+    width: 20px; /* Slightly wider but still short */
+    height: 18px;
+    margin-left: auto;
+    margin-right: 10px; /* Gives it breathing room from screen edge */
+    padding: 5px;
   }
-
+  
   .hamburger span {
     height: 2px;
-    width: 100%;
+    width: 16px; /* Shorter line */
     background-color: #51575d;
     border-radius: 2px;
+    display: block;
   }
-
+  
   .nav-container {
     display: none;
     flex-direction: column;
