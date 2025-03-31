@@ -56,12 +56,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     width: 15px;      /* Shorter line length */
     height: 18px;
     gap: 3px;
     padding: 0;
-    /* margin-right: 20px; 👈 give it more breathing room from edge */
+    margin-right: 5px; /* 👈 give it more breathing room from edge */
   }
 
   .hamburger span {
