@@ -44,7 +44,7 @@
     position: absolute;
     top: 50%;
     left: 50%; /* center horizontally */
-    transform: translate(-56%, -50%); /* center based on its own size */
+    transform: translate(-60%, -50%); /* center based on its own size */
     display: flex;
     justify-content: center;
     align-items: center;
