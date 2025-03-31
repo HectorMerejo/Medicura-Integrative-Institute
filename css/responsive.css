@@ -54,10 +54,11 @@
 
   .hamburger {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    margin-left: auto;
+    flex-shrink: 0 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .nav-container {
