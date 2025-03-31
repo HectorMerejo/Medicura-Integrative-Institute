@@ -20,13 +20,16 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 15px; /* Slightly reduce side padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
   }
 
   .div-logo {
-    flex: 1;
-    justify-content: flex-start;
-    margin-left: 0; /* Pull it flush left */
+    flex: 0 0 auto;
+    margin-left: 0;
   }
 
   .div-logo > a > img {
@@ -48,24 +51,23 @@
   }
 
   .hamburger {
-    flex: 0 0 auto; /* Don’t stretch */
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    width: 20px; /* Slightly wider but still short */
+    width: 18px; /* Set the line width */
     height: 18px;
-    margin-left: auto;
-    margin-right: 10px; /* Gives it breathing room from screen edge */
-    padding: 5px;
+    padding: 0;
+    margin-right: 10px;
+    gap: 3px;
   }
   
   .hamburger span {
+    width: 100%;
     height: 2px;
-    width: 16px; /* Shorter line */
     background-color: #51575d;
     border-radius: 2px;
-    display: block;
   }
   
   .nav-container {
