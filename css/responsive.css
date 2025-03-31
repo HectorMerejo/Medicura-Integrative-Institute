@@ -40,6 +40,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .nav-button button {
@@ -51,11 +52,11 @@
   }
 
 .hamburger {
-  /* flex: 0 0 auto; */
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: flex-end; */
+  align-items: flex-end;
   width: 18px;      /* Shorter line length */
   height: 18px;
   gap: 3px;
