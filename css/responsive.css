@@ -61,7 +61,7 @@
     height: 18px;
     gap: 3px;
     padding: 0;
-    margin-left: auto; /* 👈 give it more breathing room from edge */
+    margin-right: auto; /* 👈 give it more breathing room from edge */
   }
 
   .hamburger span {
