@@ -3,7 +3,7 @@
   display: none; /* hidden by default */
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
+  width: 15px;
   height: 24px;
   cursor: pointer;
   padding: 5px;
@@ -11,7 +11,7 @@
 
 .hamburger span {
   height: 3px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #51575d;
   border-radius: 2px;
   display: block;
@@ -37,6 +37,14 @@
     flex: 1;
     display: flex;
     justify-content: center;
+  }
+
+  .nav-button button {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    max-width: 120px;
+    margin: 0 auto;
   }
 
   .hamburger {
