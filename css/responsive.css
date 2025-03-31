@@ -23,8 +23,8 @@
     /* display: flex; */
     /* justify-content: space-between; */
     align-items: center;
-    /* padding: 10px 20px;
-    gap: 10px; */
+    padding: 10px 20px;
+    gap: 10px;
   }
 
   /* .div-logo {
@@ -37,11 +37,10 @@
   }
 
   .nav-button {
-    /* flex: 1;
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center; */
-    margin-right: 50px;
+    align-items: center; 
   }
 
   .nav-button button {
