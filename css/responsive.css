@@ -36,15 +36,17 @@
   }
 
   .div-logo {
-    flex: 1;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
   }
-
+  
   .nav-button {
-    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
 
   .book-now-btn {
@@ -53,9 +55,10 @@
   }
 
   .hamburger {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   .nav-container {
