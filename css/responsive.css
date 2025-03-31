@@ -40,40 +40,40 @@
   }
 
   /* Button: dead center */
-.nav-button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+  .nav-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.nav-button button {
-  padding: 8px 20px;
-  font-size: 14px;
-  border-radius: 20px;
-  max-width: 120px;
-}
+  .nav-button button {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    max-width: 120px;
+  }
 
-/* Hamburger: stick to right */
-.hamburger {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 22px;
-  height: 16px;
-  gap: 3px;
-}
+  /* Hamburger: stick to right */
+  .hamburger {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+    gap: 3px;
+  }
 
-.hamburger span {
-  height: 2px;
-  width: 100%;
-  background-color: #51575d;
-  border-radius: 2px;
-}
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #51575d;
+    border-radius: 2px;
+  }
   
   .nav-container {
     display: none;
