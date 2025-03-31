@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    width: 8px;         /* Shorter lines */
+    width: 16px;         /* Shorter lines */
     height: 16px;
     margin-right: 5px;   /* Tighter to edge, but not glued */
   }
