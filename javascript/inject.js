@@ -54,3 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeInScript.defer = true;
   document.body.appendChild(fadeInScript);
 });
+
+
+// === HAMBURGER TOGGLE ===
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navContainer = document.getElementById('nav-container');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navContainer.classList.toggle('show');
+  });
+});
