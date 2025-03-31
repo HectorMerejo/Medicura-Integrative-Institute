@@ -3,7 +3,7 @@
   display: none; /* hidden by default */
   flex-direction: column;
   justify-content: space-between;
-  width: 15px;
+  width: 30px;
   height: 24px;
   cursor: pointer;
   padding: 5px;
@@ -30,7 +30,7 @@
   }
 
   .div-logo > a > img {
-    height: 30px;
+    height: 45px;
   }
 
   .nav-button {
