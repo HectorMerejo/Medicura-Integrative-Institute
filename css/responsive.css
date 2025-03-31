@@ -23,13 +23,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 12px; /* smaller horizontal padding */
   }
 
   .div-logo {
     flex: 1;
     display: flex;
     justify-content: flex-start;
+    margin-right: 10px;
+  }
+
+  .div-logo > a > img {
+    height: 65px;
   }
 
   .nav-button {
@@ -38,19 +43,27 @@
     justify-content: center;
   }
 
+  .book-now-btn,
+  .nav-button button {
+    padding: 8px 18px;
+    font-size: 14px;
+    max-width: 120px;
+    width: 100%;
+  }
+
   .hamburger {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    width: 30px;
-    height: 20px;
+    width: 22px;
+    height: 18px;
     cursor: pointer;
   }
 
   .hamburger span {
-    height: 3px;
+    height: 2px;
     width: 100%;
     background-color: #51575d;
     border-radius: 3px;
@@ -67,10 +80,6 @@
 
   .nav-container.show {
     display: flex;
-  }
-
-  .div-logo > a > img {
-    height: 80px;
   }
 
   .photo-reel {
