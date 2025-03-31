@@ -208,6 +208,16 @@
     margin: 2px 0;
   }
 
+  .footer-section ul {
+    list-style: none;        /* Removes bullet points */
+    padding: 0;              /* Removes default left padding */
+    margin: 0;               /* Tightens up spacing */
+  }
+  
+  .footer-section li {
+    margin: 2px 0;           /* Optional: minimal spacing between links */
+  }
+
   .faq-item h3 {
     font-size: 1rem;
   }
