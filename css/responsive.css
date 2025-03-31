@@ -20,11 +20,7 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    gap: 8px;
+    padding: 10px 15px; /* Slightly reduce side padding */
   }
 
   .div-logo {
@@ -33,22 +29,10 @@
     margin-left: 0; /* Pull it flush left */
   }
 
-  .div-logo > a > img {
-    height: 60px;
-  }
-
   .nav-button {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-
-  .nav-button button {
-    padding: 8px 20px;
-    font-size: 14px;
-    border-radius: 20px;
-    max-width: 120px;
-    margin: 0 auto;
   }
 
   .hamburger {
