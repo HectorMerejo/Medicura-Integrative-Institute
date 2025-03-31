@@ -1,5 +1,23 @@
 /* === HAMBURGER MENU === */
-  
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin-left: auto; /* Push to the right */
+  padding: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: #51575d;
+  border-radius: 3px;
+  display: block;
+}
+
 
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
@@ -18,12 +36,12 @@
   }
 
   .div-logo {
-    order: 1;
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .nav-button {
-    order: 2;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -35,7 +53,6 @@
   }
 
   .hamburger {
-    order: 3;
     flex: 1;
     display: flex;
     justify-content: flex-end;
