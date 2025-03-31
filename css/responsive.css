@@ -19,56 +19,58 @@
 
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
-  /* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-  } */
+  .navbar {
+    position: relative;
+    height: 100px;
+  }
 
-  /* .div-logo {
-    flex: 0 0 auto;
-    margin-right: 20px;
-  } */
+  /* Logo: stick to the left */
+  .div-logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .div-logo > a > img {
     height: 80px;
   }
 
-  /* .nav-button {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  } */
+  /* Button: dead center */
+.nav-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  /* .nav-button button {
-    padding: 8px 20px;
-    font-size: 14px;
-    border-radius: 20px;
-    max-width: 120px;
-    margin: 0 auto;
-  } */
+.nav-button button {
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  max-width: 120px;
+}
 
-  .hamburger {
-    /* flex: 0 0 auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20px;      /* Shorter line length */
-    height: 18px;
-    gap: 3px;
-    padding: 0;
-    margin-right: 30px; /* 👈 give it more breathing room from edge */
-  }
+/* Hamburger: stick to right */
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  gap: 3px;
+}
 
-  .hamburger span {
-    height: 2px;
-    width: 100%;
-    background-color: #51575d;
-    border-radius: 2px;
-  }
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background-color: #51575d;
+  border-radius: 2px;
+}
   
   .nav-container {
     display: none;
