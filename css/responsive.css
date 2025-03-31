@@ -66,6 +66,7 @@
     width: 22px;
     height: 16px;
     gap: 3px;
+    border: 1px solid red; /* 👀 helps you visualize spacing */
   }
 
   .hamburger span {
