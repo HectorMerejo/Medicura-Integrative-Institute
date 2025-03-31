@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
     gap: 10px;
   }
 
@@ -50,25 +50,25 @@
     margin: 0 auto;
   }
 
-  .hamburger {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 18px; /* Set the line width */
-    height: 18px;
-    padding: 0;
-    margin-right: 10px;
-    gap: 3px;
-  }
-  
-  .hamburger span {
-    width: 100%;
-    height: 2px;
-    background-color: #51575d;
-    border-radius: 2px;
-  }
+.hamburger {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 18px;      /* Shorter line length */
+  height: 18px;
+  gap: 3px;
+  padding: 0;
+  margin-right: 15px; /* 👈 give it more breathing room from edge */
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background-color: #51575d;
+  border-radius: 2px;
+}
   
   .nav-container {
     display: none;
