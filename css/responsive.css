@@ -42,14 +42,11 @@
   /* Button: dead center */
   .nav-button {
     position: absolute;
+    left: 50%;
     top: 50%;
-    left: 50%; /* center horizontally */
-    transform: translate(-50%, -50%); /* center based on its own size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content; /* prevents squishing */
+    transform: translate(-47%, -50%); /* ⬅️ adjust horizontal balance */
   }
+  
 
   .nav-button button {
     padding: 8px 20px;
