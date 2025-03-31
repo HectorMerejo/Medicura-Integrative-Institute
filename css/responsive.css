@@ -11,7 +11,7 @@
 
 .hamburger span {
   height: 3px;
-  /* width: 100%; */
+  width: 100%;
   background-color: #51575d;
   border-radius: 2px;
   display: block;
@@ -53,14 +53,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    width: 8px;         /* Shorter lines */
+    width: 16px;         /* Shorter lines */
     height: 16px;
     margin-right: 5px;   /* Tighter to edge, but not glued */
   }
 
   .hamburger span {
     height: 2px;
-    /* width: 100%; */
+    width: 100%;
     background-color: #51575d;
     border-radius: 2px;
   }
