@@ -30,8 +30,8 @@
   .div-logo {
     flex: 1;
     display: flex;
-    /* justify-content: flex-start; */
-    margin-right: 10px; /* pull it to the very left */
+    justify-content: flex-start;
+    /* margin-right: 10px; pull it to the very left */
   }
 
   .div-logo > a > img {
