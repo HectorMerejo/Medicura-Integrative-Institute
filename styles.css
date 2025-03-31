@@ -192,7 +192,7 @@ body {
 
 /* Add this style block or put these styles in your CSS file */
 .photo-reel {
-  margin-top: 135px;
+  margin-top: 0;
   position: relative;
   width: 100%;
   height: 700px;
