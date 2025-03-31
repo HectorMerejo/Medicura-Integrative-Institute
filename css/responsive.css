@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: space-between;
     /* align-items: flex-end; */
-    width: 25px;      /* Shorter line length */
+    width: 40px;      /* Shorter line length */
     height: 18px;
     gap: 3px;
     padding: 0;
