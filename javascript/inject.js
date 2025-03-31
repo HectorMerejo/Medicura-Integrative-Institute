@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (navTarget) {
         const adjustedNav = data.replace(/\$\{path\}/g, pathToRoot);
         navTarget.innerHTML = adjustedNav;
+
+        // ✅ Add hamburger toggle script AFTER navbar is injected
+        const hamburger = document.getElementById('hamburger');
+        const navContainer = document.getElementById('nav-container');
+
+        if (hamburger && navContainer) {
+          hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');   // For animating lines into X
+            navContainer.classList.toggle('show'); // To show nav menu
+          });
+        }
       } else {
         console.warn('Navbar placeholder not found.');
       }
@@ -53,16 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeInScript.src = `${pathToRoot}javascript/fadeIn.js`;
   fadeInScript.defer = true;
   document.body.appendChild(fadeInScript);
-});
-
-
-// === HAMBURGER TOGGLE ===
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const navContainer = document.getElementById('nav-container');
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navContainer.classList.toggle('show');
-  });
 });
