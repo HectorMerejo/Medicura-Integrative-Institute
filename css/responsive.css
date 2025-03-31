@@ -36,12 +36,13 @@
     height: 80px;
   }
 
-  /* .nav-button {
-    flex: 1;
+  .nav-button {
+    /* flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-  } */
+    align-items: center; */
+    margin-right: 50px;
+  }
 
   .nav-button button {
     padding: 8px 20px;
