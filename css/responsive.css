@@ -43,7 +43,7 @@
   .nav-button {
     position: absolute;
     top: 50%;
-    left: 50%; /* center horizontally */
+    left: 40%; /* center horizontally */
     transform: translate(-50%, -50%); /* center based on its own size */
     display: flex;
     justify-content: center;
