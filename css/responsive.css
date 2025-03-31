@@ -3,9 +3,9 @@
   display: none; /* hidden by default */
   flex-direction: column;
   justify-content: space-between;
-  width: 10px;
+  width: 15px;
   height: 24px;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 5px;
 }
 
@@ -14,7 +14,7 @@
   width: 100%;
   background-color: #51575d;
   border-radius: 2px;
-  display: block;
+  /* display: block; */
 }
 
 /* === MOBILE NAVIGATION === */
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    gap: 10px;
+    /* gap: 10px; */
   }
 
   .div-logo {
@@ -51,25 +51,25 @@
     margin: 0 auto;
   }
 
-.hamburger {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 18px;      /* Shorter line length */
-  height: 18px;
-  gap: 3px;
-  padding: 0;
-  margin-right: 20px; /* 👈 give it more breathing room from edge */
-}
+  .hamburger {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    width: 15px;      /* Shorter line length */
+    height: 18px;
+    gap: 3px;
+    padding: 0;
+    margin-left: 20px; /* 👈 give it more breathing room from edge */
+  }
 
-.hamburger span {
-  height: 2px;
-  width: 100%;
-  background-color: #51575d;
-  border-radius: 2px;
-}
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #51575d;
+    border-radius: 2px;
+  }
   
   .nav-container {
     display: none;
