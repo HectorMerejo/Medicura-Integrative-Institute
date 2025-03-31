@@ -22,6 +22,7 @@
   .navbar {
     position: relative;
     height: 100px;
+    padding: 10px 0;
   }
 
   /* Logo: stick to the left */
@@ -30,6 +31,8 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+    margin-left: 0 !important;
+    border: 1px solid red; /* 👀 helps you visualize spacing */
   }
 
   .div-logo > a > img {
