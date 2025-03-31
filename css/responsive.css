@@ -159,40 +159,53 @@
   }
 
   .footer {
-    padding: 20px 10px; /* reduce vertical and horizontal padding */
+    padding: 10px 0; /* less top/bottom space */
   }
 
   .footer-container {
     flex-direction: column;
-    gap: 10px; /* reduce space between footer sections */
-    padding: 0;
+    align-items: center;
+    gap: 0; /* kill the spacing between sections */
+    padding: 0 10px;
+    margin: 0;
   }
 
   .footer-section {
+    margin: 0;
+    padding: 5px 0;
     width: 100%;
-    margin-bottom: 10px; /* reduce bottom spacing */
     text-align: center;
   }
 
   .footer-section h4 {
-    margin-bottom: 5px; /* tighten heading space */
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin: 5px 0;
   }
 
   .footer-section p,
   .footer-section a {
-    font-size: 0.9rem; /* slightly smaller text */
-    line-height: 1.4; /* tighten line height */
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin: 2px 0;
   }
 
-  .footer-bottom {
-    padding-top: 10px;
-    font-size: 0.85rem;
+  .social {
+    margin-top: 5px;
   }
 
   .social a img {
-    width: 24px; /* slightly smaller icons */
-    margin-right: 6px;
+    width: 22px;
+    margin: 0 4px;
+  }
+
+  .footer-bottom {
+    padding-top: 5px;
+    font-size: 0.75rem;
+    margin-top: 10px;
+  }
+
+  .footer-bottom p {
+    margin: 2px 0;
   }
 
   .faq-item h3 {
