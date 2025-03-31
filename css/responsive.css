@@ -90,6 +90,7 @@
 
   .photo-reel {
     height: 400px;
+    margin-top: 0;
   }
 
   .overlay-text p {
