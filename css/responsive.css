@@ -20,7 +20,7 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .navbar {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
