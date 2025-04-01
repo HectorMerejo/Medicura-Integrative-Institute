@@ -4,26 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (hamburger && navContainer) {
     hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("open"); // for animation
+      hamburger.classList.toggle("open"); // for hamburger animation
       navContainer.classList.toggle("show");
     });
-  } else {
-    console.warn("Hamburger menu or nav container not found.");
   }
 
-  // Enable dropdown toggles on mobile
-  const parentItems = document.querySelectorAll('.nav-links > ul > li > a');
+  // Handle mobile dropdown toggle
+  const menuLinks = document.querySelectorAll('.nav-links > ul > li > a');
 
-  parentItems.forEach((link) => {
+  menuLinks.forEach(link => {
     const parentLi = link.parentElement;
-    const submenu = parentLi.querySelector('.dropdown');
+    const dropdown = parentLi.querySelector('.dropdown');
 
-    if (submenu) {
-      link.addEventListener('click', (e) => {
-        // Only prevent default on mobile
+    if (dropdown) {
+      link.addEventListener('click', e => {
         if (window.innerWidth <= 768) {
-          e.preventDefault();
-          submenu.classList.toggle('show');
+          e.preventDefault(); // prevent link jumping to "#"
+          dropdown.classList.toggle('show');
         }
       });
     }
