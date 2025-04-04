@@ -4,23 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (hamburger && navContainer) {
     hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("open"); // for hamburger animation
-      navContainer.classList.toggle("show");
+      hamburger.classList.toggle("open");  // animate hamburger into X
+      navContainer.classList.toggle("show");  // show/hide the nav menu
     });
   }
 
-  // Handle mobile dropdown toggle
-  const menuLinks = document.querySelectorAll('.nav-links > ul > li > a');
+  // Dropdown links (only on mobile)
+  const dropdownParents = document.querySelectorAll('.nav-links > ul > li');
 
-  menuLinks.forEach(link => {
-    const parentLi = link.parentElement;
-    const dropdown = parentLi.querySelector('.dropdown');
+  dropdownParents.forEach(parent => {
+    const link = parent.querySelector('a');  // The top-level "LOCATIONS", "ABOUT US", etc.
+    const submenu = parent.querySelector('.dropdown');
 
-    if (dropdown) {
-      link.addEventListener('click', e => {
-        if (window.innerWidth <= 768) {
-          e.preventDefault(); // prevent link jumping to "#"
-          dropdown.classList.toggle('show');
+    if (submenu) {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {   // Only do this on mobile
+          e.preventDefault();             // Prevent the # from jumping
+          submenu.classList.toggle('show'); // Toggle the dropdown
         }
       });
     }
