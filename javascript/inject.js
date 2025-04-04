@@ -66,16 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error('Footer load error:', err));
 
-  // Inject Book Now Button if needed
-  const bookNowPlaceholder = document.getElementById("book-now-placeholder");
-  if (bookNowPlaceholder) {
-    bookNowPlaceholder.innerHTML = `
-      <div class="book-now-container">
-        <button class="book-now-btn">Book Now</button>
-      </div>
-    `;
-  }
-
   // Inject hamburger.js
   const hamburgerScript = document.createElement("script");
   hamburgerScript.src = `${pathToRoot}javascript/hamburger.js`;
