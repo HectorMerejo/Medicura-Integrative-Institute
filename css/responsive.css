@@ -24,22 +24,6 @@
 
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
-  /* .nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #ffffff;
-    width: 100%;
-    position: absolute;
-    top: 100px; 
-    left: 0;
-    z-index: 1000;
-    padding: 10px 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-  } */
-
   .nav-container {
     display: none;            /* Hidden by default */
     flex-direction: column;
@@ -91,8 +75,14 @@
   }
 
   /* Hide dropdowns in mobile */
-  .nav-links ul li > ul.dropdown {
-    display: none !important;
+  .nav-links ul li ul.dropdown {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+    margin-top: 5px;
   }
 
   .nav-links > ul > li::after {
@@ -203,24 +193,9 @@
   }
 
   /* Optional slide-down animation for nav */
-  /* .nav-container {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  } */
-
   .nav-container.show {
     max-height: 300px; /* or however tall your mobile menu gets */
   }
-
-  
-  /* .nav-container {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-  } */
 
   .nav-container.show {
     display: flex;
