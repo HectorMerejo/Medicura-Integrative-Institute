@@ -76,7 +76,9 @@
 
   /* Hide dropdowns in mobile */
   .nav-links ul li ul.dropdown {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
     flex-direction: column;
     width: 100%;
     background-color: #f9f9f9;
@@ -108,7 +110,7 @@
 
   /* When .show is toggled via JS */
   .nav-links ul li ul.dropdown.show {
-    display: flex;
+    max-height: 500px; /* Enough height for your sub-links */
   }
 
   .nav-links ul li ul.dropdown li {
