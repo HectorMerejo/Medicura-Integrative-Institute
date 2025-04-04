@@ -35,7 +35,8 @@
     left: 0;
     z-index: 1000;
     padding: 0;                /* No padding until expanded */
-    overflow: hidden;
+    overflow-x: hidden;  /* only hide horizontal overflow */
+    overflow-y: visible; /* allow dropdowns to spill vertically */
     max-height: 0;
     transition: max-height 0.3s ease, padding 0.3s ease;
   }
