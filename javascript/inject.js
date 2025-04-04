@@ -24,6 +24,29 @@ document.addEventListener("DOMContentLoaded", () => {
             navContainer.classList.toggle('show'); // To show nav menu
           });
         }
+
+        // 🛎️ NEW: Add Book Now button popup logic here
+        const bookNowBtn = document.querySelector('.book-now-btn');
+        const popup = document.getElementById('booking-popup');
+        const closeBtn = document.getElementById('close-popup');
+
+        if (bookNowBtn && popup && closeBtn) {
+          bookNowBtn.addEventListener('click', () => {
+            popup.style.display = 'flex'; // Show popup
+          });
+
+          closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none'; // Hide popup
+          });
+
+          window.addEventListener('click', (e) => {
+            if (e.target === popup) {
+              popup.style.display = 'none'; // Clicking outside closes it
+            }
+          });
+        } else {
+          console.warn('Book Now button or popup not found.');
+        }
       } else {
         console.warn('Navbar placeholder not found.');
       }
