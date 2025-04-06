@@ -44,6 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
               popup.style.display = 'none'; // Clicking outside closes it
             }
           });
+          // Form submission handling
+          const bookingForm = document.getElementById('booking-form');
+
+          if (bookingForm) {
+            bookingForm.addEventListener('submit', (e) => {
+              e.preventDefault(); // Stop the page from reloading
+              
+              // Show a thank you alert
+              alert('Thank you! Your inquiry has been sent.');
+              
+              // Optionally reset form
+              bookingForm.reset();
+
+              // Hide popup
+              popup.style.display = 'none';
+            });
+          }
         } else {
           console.warn('Book Now button or popup not found.');
         }

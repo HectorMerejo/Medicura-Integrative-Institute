@@ -284,17 +284,21 @@
       <div class="booking-popup-content">
         <span id="close-popup" class="close-btn">&times;</span>
         <h2>Book a Consultation</h2>
-        <form id="booking-form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Tell us about your inquiry..."
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/myzenblk" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
         </form>
       </div>
+      œß
     </div>
   </body>
 </html>
