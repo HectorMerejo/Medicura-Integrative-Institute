@@ -54,12 +54,25 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .nav-button {
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* 👈 Don't let it stretch to the right */
   display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
+  justify-content: center;   /* Center this whole container */
+  align-items: center;
+  text-align: center;
+  margin: 0;                 /* ✅ Remove any margin that pushes it */
+  margin: 0 60px 0 0; /* top right bottom left */
 }
+
+.nav-button .nav-actions {
+  display: flex;
+  flex-direction: column;   /* Stack the two items vertically */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;                /* Space between button and translate */
+}
+
 
 .content {
   flex: 1;
@@ -140,7 +153,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   outline: 2px solid #51575d;
-  margin-right: 50px; /* Add margin to the right */
+  margin: 0; /* ✅ NO margin-right */
 }
 
 .nav-links > ul > li:not(.external-link)::after {
@@ -912,11 +925,12 @@ body {
 }
 
 #google_translate_element {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;               /* Optional: make sure it's full width */
   margin-top: 10px;
+  text-align: center;
 }
 
 .goog-te-gadget {
@@ -943,12 +957,7 @@ body {
   margin-top: 5px;
 }
 
-.nav-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* space between Book Now and Translate */
-}
+
 
 
 

@@ -275,6 +275,12 @@
     padding: 10px;
   }
 
+  #google_translate_element {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }  
+
   .footer {
     padding: 10px 0; /* less top/bottom space */
   }
