@@ -893,3 +893,63 @@ body {
   cursor: pointer;
 }
 
+.translate-dropdown {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+} 
+
+body {
+  top: 0px !important; 
+}
+
+/* Remove ugly Google logo box */
+.goog-logo-link {
+  display: none !important;
+}
+
+#google_translate_element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.goog-te-gadget {
+  text-align: center;
+  width: 100%;
+}
+
+.goog-te-gadget-simple {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  background: white;
+}
+
+.goog-te-combo {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.nav-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* space between Book Now and Translate */
+}
+
+
+
+

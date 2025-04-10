@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.warn('Navbar placeholder not found.');
       }
     })
+    .catch(err => console.error('Navbar load error:', err)); 
 
 
   // Inject Footer
@@ -101,6 +102,26 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error('Footer load error:', err));
 
+    // === Inject Google Translate ===
+  const googleTranslateScript = document.createElement('script');
+  googleTranslateScript.type = 'text/javascript';
+  googleTranslateScript.innerHTML = `
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,es,fr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  `;
+  document.head.appendChild(googleTranslateScript);
+
+  const googleTranslateAPIScript = document.createElement('script');
+  googleTranslateAPIScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  googleTranslateAPIScript.defer = true;
+  document.body.appendChild(googleTranslateAPIScript);
+
+  
   // Inject hamburger.js
   const hamburgerScript = document.createElement("script");
   hamburgerScript.src = `${pathToRoot}javascript/hamburger.js`;
