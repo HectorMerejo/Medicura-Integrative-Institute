@@ -48,13 +48,16 @@
     <script src="javascript/inject.js" defer></script>
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en', 
-          includedLanguages: 'en,es,fr', 
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,es,fr",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
       }
-      </script>      
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -287,13 +290,14 @@
       <!-- Footer placeholder -->
       <div id="footer-placeholder"></div>
     </div>
+    <div id="booking-popup-placeholder"></div>
 
     <!-- Booking Popup -->
-    <div id="booking-popup" class="booking-popup">
+    <!-- <div id="booking-popup" class="booking-popup">
       <div class="booking-popup-content">
         <span id="close-popup" class="close-btn">&times;</span>
-        <h2>Book a Consultation</h2>
-        <!-- modify this form HTML and place wherever you want your form -->
+        <h2>Join The Waitlist</h2>
+        
         <form
           id="booking-form"
           action="https://formspree.io/f/mjkypvnv"
@@ -308,8 +312,9 @@
             required
           ></textarea>
           <button type="submit">Submit</button>
+          <p><strong>Note:</strong> After submitting, you'll be asked to complete a short questionnaire. Please allow a few minutes to finish.</p>
         </form>
       </div>
-    </div>
+    </div>  -->
   </body>
 </html>

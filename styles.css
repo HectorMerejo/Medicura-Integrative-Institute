@@ -717,6 +717,22 @@ body {
   margin: 20px 0 40px;
 }
 
+.booking-popup-content h2 {
+  font-family: 'Josefin Slab', serif; /* Same nice font as your website */
+  font-size: 2rem; /* Slightly bigger title if you want */
+  color: #51575d; /* Nice matching color */
+  text-align: center;
+}
+
+.booking-popup-content p {
+  font-family: 'Poppins', sans-serif; /* Clean font for the note */
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
 .book-now-btn {
   padding: 12px 30px;
   background-color: white;
