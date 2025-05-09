@@ -125,7 +125,7 @@ function addMetaTag(property, content) {
 // Add Open Graph and Twitter meta tags
 addMetaTag('og:title', 'Medicura Integrative Institute');
 addMetaTag('og:description', 'Explore holistic care and personalized wellness programs with Dr. Karl.');
-addMetaTag('og:image', 'images/services_images/guasha.jpg'); // Replace with actual URL
+addMetaTag('og:image', '/images/services_images/guasha.jpg');
 addMetaTag('og:url', 'https://medicuraintegrativeinstitute.netlify.app/');
 addMetaTag('og:type', 'website');
 addMetaTag('twitter:card', 'summary_large_image');
