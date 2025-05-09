@@ -826,7 +826,7 @@ body {
 }
 
 .hamburger {
-  display: none; /* Hide on desktop */
+  /* display: none; Hide on desktop */
   flex-direction: column;
   justify-content: space-between;
   width: 22px;
