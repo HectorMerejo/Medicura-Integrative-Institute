@@ -42,7 +42,8 @@
   }
 
   .nav-container.show {
-    display: flex;
+    display: flex !important; /* Force show */
+    flex-direction: column;
     max-height: 500px; /* adjust if needed */
     padding: 20px;
   }
