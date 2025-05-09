@@ -13,9 +13,42 @@ document.addEventListener("DOMContentLoaded", () => {
       if (navTarget) {
         const adjustedNav = data.replace(/\$\{path\}/g, pathToRoot);
         navTarget.innerHTML = adjustedNav;
+
+// ✅ HAMBURGER INIT
+const hamburger = document.getElementById("hamburger");
+const navContainer = document.getElementById("nav-container");
+
+if (hamburger && navContainer) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    navContainer.classList.toggle("show");
+  });
+}
+
+// ✅ MOBILE DROPDOWNS
+const menuLinks = document.querySelectorAll('.nav-links > ul > li > a');
+menuLinks.forEach(link => {
+  const parentLi = link.parentElement;
+  const dropdown = parentLi.querySelector('.dropdown');
+
+  if (dropdown) {
+    link.addEventListener('click', e => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('show');
+      }
+    });
+  }
+});
+
       }
     })
     .catch(err => console.error('Navbar load error:', err)); 
+
+
+
+
+
 
   // Inject Footer
   fetch(`${pathToRoot}js-html/footer.html`)
@@ -46,12 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
   googleTranslateAPIScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
   googleTranslateAPIScript.defer = true;
   document.body.appendChild(googleTranslateAPIScript);
-
-  // Inject hamburger.js
-  const hamburgerScript = document.createElement("script");
-  hamburgerScript.src = `${pathToRoot}javascript/hamburger.js`;
-  hamburgerScript.defer = true;
-  document.body.appendChild(hamburgerScript);
 
   // Inject fadeIn.js
   const fadeInScript = document.createElement("script");
