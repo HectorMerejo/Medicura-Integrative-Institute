@@ -45,11 +45,6 @@ menuLinks.forEach(link => {
     })
     .catch(err => console.error('Navbar load error:', err)); 
 
-
-
-
-
-
   // Inject Footer
   fetch(`${pathToRoot}js-html/footer.html`)
     .then(res => res.text())
@@ -132,7 +127,7 @@ menuLinks.forEach(link => {
      // ✅ Wait a tiny bit before setting up behavior
   setTimeout(() => {
     setupPopupBehavior();
-  }, 50);
+  }, 200);
 }
 
       // === SETUP FUNCTION ===
