@@ -113,22 +113,7 @@ link3.rel = "stylesheet";
 link3.href = "https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
 document.head.appendChild(link3);
 
-function addMetaTag(property, content) {
-  const meta = document.createElement('meta');
-  if (property.startsWith('og:') || property === 'twitter:card') {
-    meta.setAttribute(property.startsWith('og:') ? 'property' : 'name', property);
-    meta.setAttribute('content', content);
-    document.head.appendChild(meta);
-  }
-}
 
-// Add Open Graph and Twitter meta tags
-addMetaTag('og:title', 'Medicura Integrative Institute');
-addMetaTag('og:description', 'Explore holistic care and personalized wellness programs with Dr. Karl.');
-addMetaTag('og:image', '/images/services_images/guasha.jpg');
-addMetaTag('og:url', 'https://medicuraintegrativeinstitute.netlify.app/');
-addMetaTag('og:type', 'website');
-addMetaTag('twitter:card', 'summary_large_image');
 
 
 
