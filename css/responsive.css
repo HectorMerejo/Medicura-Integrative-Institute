@@ -143,8 +143,15 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-25%, -50%); /* ⬅️ adjust horizontal balance */
+    transform: translate(-50%, -50%); /* perfectly centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1002; /* higher than anything else in header */
+    pointer-events: auto;
   }
+  
   
   .nav-button button {
     padding: 8px 20px;
