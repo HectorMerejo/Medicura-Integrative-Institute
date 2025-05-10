@@ -268,6 +268,7 @@ body {
 .overlay-text p {
   font-size: 5em;
   margin: 0;
+  white-space: nowrap;
 }
 
 .text-overlay-retreat {
