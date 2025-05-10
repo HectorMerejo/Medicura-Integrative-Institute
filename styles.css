@@ -252,16 +252,17 @@ body {
 
 .overlay-text {
   position: absolute;
-  bottom: 50px; 
-  left: 20px; /* Adjust as needed to position from the left edge */
-  z-index: 2;
-  transform: translateY(-50%);
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  text-align: left;
-  padding: 20px;
-  max-width: 600px; /* Adjust the width to make text stack */
-  width: 100%; /* Ensure it uses the max-width value */
+  font-size: 2.5rem;
   font-family: "Josefin Slab", serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Optional for contrast */
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 2;
 }
 
 .overlay-text p {
