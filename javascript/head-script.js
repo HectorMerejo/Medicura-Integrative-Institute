@@ -112,8 +112,3 @@ var link3 = document.createElement("link");
 link3.rel = "stylesheet";
 link3.href = "https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
 document.head.appendChild(link3);
-
-
-
-
-
