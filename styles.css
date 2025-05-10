@@ -271,6 +271,12 @@ body {
   max-width: none;
 }
 
+.overlay-text p span {
+  display: block;
+  line-height: 1.1;
+}
+
+
 .text-overlay-retreat {
   z-index: 2;
   max-width: 600px;
