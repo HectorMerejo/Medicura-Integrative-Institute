@@ -255,18 +255,15 @@ body {
   bottom: 20px;
   left: 20px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Josefin Slab", serif;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.4); /* optional */
-  padding: 8px 12px;
-  border-radius: 6px;
   z-index: 2;
-  max-width: 300px;         /* Limit width so it wraps */
-  white-space: normal;      /* Allow wrapping */
-  line-height: 1.4;         /* Better spacing between lines */
-  word-break: break-word;   /* Force break if needed */
+  max-width: 240px;
+  white-space: normal;
+  line-height: 1.4;
 }
+
 
 .overlay-text p {
   font-size: 5em;
