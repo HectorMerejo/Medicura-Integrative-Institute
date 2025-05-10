@@ -252,6 +252,7 @@ body {
 
 .overlay-text {
   position: absolute;
+  bottom: 30px; 
   top: 50%;
   left: 20px; /* Adjust as needed to position from the left edge */
   z-index: 2;
