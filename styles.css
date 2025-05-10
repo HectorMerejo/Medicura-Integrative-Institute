@@ -271,10 +271,6 @@ body {
   max-width: none;
 }
 
-.overlay-text p span {
-  display: block;
-}
-
 .text-overlay-retreat {
   z-index: 2;
   max-width: 600px;
@@ -285,8 +281,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* top: 50%;
-  left: 50%; */
   transform: translate(-50%, -50%);
   color: white;
 }
