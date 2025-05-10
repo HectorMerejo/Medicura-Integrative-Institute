@@ -51,6 +51,7 @@ menuLinks.forEach(link => {
     .then(data => {
       const footerTarget = document.getElementById('footer-placeholder');
       if (footerTarget) {
+        const adjustedFooter = data.replace(/\$\{path\}/g, pathToRoot);
         footerTarget.innerHTML = data;
       }
     })
