@@ -52,7 +52,7 @@ menuLinks.forEach(link => {
       const footerTarget = document.getElementById('footer-placeholder');
       if (footerTarget) {
         const adjustedFooter = data.replace(/\$\{path\}/g, pathToRoot);
-        footerTarget.innerHTML = data;
+        footerTarget.innerHTML = adjustedFooter;
       }
     })
     .catch(err => console.error('Footer load error:', err));
