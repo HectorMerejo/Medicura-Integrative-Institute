@@ -259,7 +259,6 @@ body {
   font-size: 2.5rem;
   font-family: "Josefin Slab", serif;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3); /* Optional for contrast */
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 2;
