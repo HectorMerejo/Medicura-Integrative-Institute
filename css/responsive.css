@@ -357,25 +357,16 @@
     font-size: 0.95rem;
   }
 
-  .overlay-text p {
-    font-size: 2em;
-    text-align: center;
-    padding: 0 10px;
+  .overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    font-size: 1rem;
+    max-width: 80%;
     line-height: 1.3;
+    z-index: 2;
   }
-  
-  .overlay-text p .line-top {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .overlay-text p .line-bottom {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
 }
 
 /* === RESPONSIVE FONT SCALING === */
