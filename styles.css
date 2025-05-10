@@ -269,8 +269,6 @@ body {
   margin: 0;
   white-space: nowrap;
   max-width: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .text-overlay-retreat {
