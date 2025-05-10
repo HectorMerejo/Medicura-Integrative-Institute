@@ -262,13 +262,15 @@ body {
   max-width: 600px; /* Adjust the width to make text stack */
   width: 100%; /* Ensure it uses the max-width value */
   font-family: "Josefin Slab", serif;
-  
 }
 
 .overlay-text p {
   font-size: 5em;
   margin: 0;
   white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .text-overlay-retreat {
