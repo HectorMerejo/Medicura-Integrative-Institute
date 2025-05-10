@@ -144,6 +144,15 @@ menuLinks.forEach(link => {
           bookingPopup.style.display = 'flex';
         });
 
+        const footerBookLink = document.getElementById("footer-book-now");
+
+      if (footerBookLink) {
+        footerBookLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          bookingPopup.style.display = "flex";
+        });
+      }
+
         closeBtn.addEventListener('click', () => {
           bookingPopup.style.display = 'none';
         });
