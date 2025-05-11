@@ -24,28 +24,26 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .nav-container {
-    display: none;               /* Hidden until hamburger click */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     background-color: #ffffff;
     width: 100%;
-    position: static;
-    top: 100px;
+    position: absolute;  /* ✅ Keep it floating */
+    top: 100%;            /* ✅ Place it right below the navbar */
     left: 0;
     z-index: 1000;
     padding: 0;
-    overflow: hidden;              /* Collapsed by default */
+    overflow-x: hidden;
+    overflow-y: auto;
     max-height: 0;
     transition: max-height 0.3s ease;
   }
 
   .nav-container.show {
     display: flex !important;
-    flex-direction: column;
+    max-height: 1000px;   /* Allow enough height */
     padding: 20px;
-    max-height: 1000px;           /* ✅ Remove height restriction */
-    overflow: visible;          /* ✅ Allow dropdowns to overflow */
-    position: relative;         /* ✅ Keep layout natural */
   }
   
   /* Optional scroll hint shadow */
@@ -111,11 +109,9 @@
 
   .navbar {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px 0;
-    z-index: 1000;
+    z-index: 1001;
+    background-color: white;
+    height: auto;
   }
 
   /* Hide submenus by default on mobile */
