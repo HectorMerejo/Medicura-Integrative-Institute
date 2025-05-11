@@ -24,22 +24,19 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .nav-container {
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
     background-color: #ffffff;
-    width: 100%;
     position: absolute;
     top: 100px;
     left: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 9998; /* One layer below the navbar */
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: auto;
     max-height: 100vh;
-    transition: max-height 0.3s ease, padding 0.3s ease;
   }
-
+  
   .nav-container.show {
     display: flex !important;
     max-height: 1000px;   /* Allow enough height */
@@ -108,11 +105,16 @@
   }
 
   .navbar {
-    position: relative;
-    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
     background-color: white;
-    height: auto;
+    z-index: 9999;
   }
+  
 
   /* Hide submenus by default on mobile */
   /* .nav-links ul li ul.dropdown {
@@ -181,7 +183,7 @@
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     width: 22px;
