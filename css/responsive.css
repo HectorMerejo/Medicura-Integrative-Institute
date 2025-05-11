@@ -24,20 +24,20 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .nav-container {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: #ffffff;
     width: 100%;
-    position: absolute;  /* ✅ Keep it floating */
-    top: 100%;            /* ✅ Place it right below the navbar */
+    position: absolute;
+    top: 100px;
     left: 0;
     z-index: 1000;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
-    max-height: 0;
-    transition: max-height 0.3s ease;
+    overflow-y: visible;
+    max-height: 100vh;
+    transition: max-height 0.3s ease, padding 0.3s ease;
   }
 
   .nav-container.show {
