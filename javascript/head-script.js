@@ -11,16 +11,32 @@ document.head.appendChild(metaViewport);
 // Set title
 document.title = 'Medicura Integrative Institute';
 
-// Create and append stylesheets
-var linkStylesheet = document.createElement('link');
-linkStylesheet.setAttribute('rel', 'stylesheet');
-linkStylesheet.setAttribute('href', '../styles.css');
-document.head.appendChild(linkStylesheet);
+var preloadStylesheet = document.createElement('link');
+preloadStylesheet.rel = 'preload';
+preloadStylesheet.as = 'style';
+preloadStylesheet.href = '../styles.css';
+preloadStylesheet.onload = function () {
+  this.rel = 'stylesheet';
+};
+document.head.appendChild(preloadStylesheet);
 
-var responsiveStylesheet = document.createElement('link');
-responsiveStylesheet.setAttribute('rel', 'stylesheet');
-responsiveStylesheet.setAttribute('href', '../css/responsive.css');
-document.head.appendChild(responsiveStylesheet);
+// Fallback for older browsers
+var noscriptFallback = document.createElement('noscript');
+noscriptFallback.innerHTML = '<link rel="stylesheet" href="../styles.css">';
+document.head.appendChild(noscriptFallback);
+
+var preloadResponsive = document.createElement('link');
+preloadResponsive.rel = 'preload';
+preloadResponsive.as = 'style';
+preloadResponsive.href = '../css/responsive.css';
+preloadResponsive.onload = function () {
+  this.rel = 'stylesheet';
+};
+document.head.appendChild(preloadResponsive);
+
+var noscriptResponsive = document.createElement('noscript');
+noscriptResponsive.innerHTML = '<link rel="stylesheet" href="../css/responsive.css">';
+document.head.appendChild(noscriptResponsive);
 
 // Create and append font links
 var linkFonts1 = document.createElement('link');
