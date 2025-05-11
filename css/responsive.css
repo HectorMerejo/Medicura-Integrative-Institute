@@ -34,8 +34,7 @@
     left: 0;
     z-index: 1000;
     padding: 0;
-    overflow-x: hidden;           /* Hide horizontal scroll */
-    overflow-y: auto;               /* Collapsed by default */
+    overflow: hidden;              /* Collapsed by default */
     max-height: 0;
     transition: max-height 0.3s ease;
   }
