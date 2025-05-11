@@ -43,14 +43,10 @@
   .nav-container.show {
     display: flex !important;
     flex-direction: column;
-    max-height: 100vh; /* Adjust as needed */
     padding: 20px;
-    overflow-y: auto; /* Enable scrolling */
-    overflow-x: hidden;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 9999;
+    max-height: none;           /* ✅ Remove height restriction */
+    overflow: visible;          /* ✅ Allow dropdowns to overflow */
+    position: relative;         /* ✅ Keep layout natural */
   }
   
   /* Optional scroll hint shadow */
@@ -102,7 +98,9 @@
     background-color: #f9f9f9;
     margin-top: 5px;
     padding-left: 10px;
-  }
+    position: relative;          /* ✅ Enables stacking */
+    z-index: 1001;               /* ✅ Ensures it's above body content */
+  }  
 
   .nav-links ul li ul.dropdown.show {
     display: flex;               /* show when user taps parent link */
