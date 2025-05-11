@@ -24,7 +24,7 @@
 /* === MOBILE NAVIGATION === */
 @media (max-width: 768px) {
   .nav-container {
-    display: flex;               /* Hidden until hamburger click */
+    display: none;               /* Hidden until hamburger click */
     flex-direction: column;
     align-items: flex-start;
     background-color: #ffffff;

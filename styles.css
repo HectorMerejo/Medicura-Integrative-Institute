@@ -45,15 +45,28 @@ body {
   align-items: center;
   margin-left: 20px;
 }
+
 .div-logo > a > img {
   height: 150px;
 }
+
 .nav-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 1000;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  max-height: 100vh;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
+
 
 .nav-button {
   flex: 0 0 auto; /* 👈 Don't let it stretch to the right */

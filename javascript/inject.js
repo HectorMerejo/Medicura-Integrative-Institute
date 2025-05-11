@@ -27,6 +27,7 @@ if (hamburger && navContainer) {
 
 // ✅ MOBILE DROPDOWNS
 const menuLinks = document.querySelectorAll('.nav-links > ul > li > a');
+
 menuLinks.forEach(link => {
   const parentLi = link.parentElement;
   const dropdown = parentLi.querySelector('.dropdown');
@@ -35,6 +36,12 @@ menuLinks.forEach(link => {
     link.addEventListener('click', e => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
+
+        // Close any open dropdowns first
+        document.querySelectorAll('.dropdown').forEach(d => {
+          if (d !== dropdown) d.classList.remove('show');
+        });
+
         dropdown.classList.toggle('show');
       }
     });
