@@ -29,22 +29,22 @@
     align-items: flex-start;
     background-color: #ffffff;
     width: 100%;
-    position: absolute;
+    position: static;
     top: 100px;
     left: 0;
     z-index: 1000;
     padding: 0;
     overflow-x: hidden;           /* Hide horizontal scroll */
     overflow-y: auto;               /* Collapsed by default */
-    max-height: 100vh;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    max-height: 0;
+    transition: max-height 0.3s ease;
   }
 
   .nav-container.show {
     display: flex !important;
     flex-direction: column;
     padding: 20px;
-    max-height: none;           /* ✅ Remove height restriction */
+    max-height: 1000px;           /* ✅ Remove height restriction */
     overflow: visible;          /* ✅ Allow dropdowns to overflow */
     position: relative;         /* ✅ Keep layout natural */
   }
@@ -112,8 +112,11 @@
 
   .navbar {
     position: relative;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     padding: 10px 0;
+    z-index: 1000;
   }
 
   /* Hide submenus by default on mobile */
