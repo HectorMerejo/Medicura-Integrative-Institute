@@ -42,10 +42,26 @@
   }
 
   .nav-container.show {
-    display: flex !important; /* Force show */
+    display: flex !important;
     flex-direction: column;
-    max-height: 500px; /* adjust if needed */
+    max-height: 80vh; /* Adjust as needed */
     padding: 20px;
+    overflow-y: auto; /* Enable scrolling */
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* Optional scroll hint shadow */
+  .nav-container.show::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+    z-index: 1001;
   }
 
   .nav-links ul,
@@ -202,15 +218,6 @@
 
   .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  /* Optional slide-down animation for nav */
-  .nav-container.show {
-    max-height: 300px; /* or however tall your mobile menu gets */
-  }
-
-  .nav-container.show {
-    display: flex;
   }
 
   .photo-reel {
