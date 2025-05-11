@@ -117,7 +117,7 @@
   }
 
   /* Hide submenus by default on mobile */
-  .nav-links ul li ul.dropdown {
+  /* .nav-links ul li ul.dropdown {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -125,7 +125,7 @@
     padding-left: 15px;
     border-left: 2px solid #ccc;
     margin-top: 5px;
-  }
+  } */
 
   /* When .show is toggled via JS */
   .nav-links ul li ul.dropdown.show {

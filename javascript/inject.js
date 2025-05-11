@@ -33,20 +33,24 @@ menuLinks.forEach(link => {
   const dropdown = parentLi.querySelector('.dropdown');
 
   if (dropdown) {
-    link.addEventListener('click', e => {
+    link.addEventListener('click', (e) => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
 
-        // Close any open dropdowns first
-        document.querySelectorAll('.dropdown').forEach(d => {
-          if (d !== dropdown) d.classList.remove('show');
-        });
-
+        // Toggle current dropdown
         dropdown.classList.toggle('show');
+
+        // Close all others
+        document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('show');
+          }
+        });
       }
     });
   }
 });
+
 
       }
     })
