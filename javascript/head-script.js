@@ -8,35 +8,35 @@ metaViewport.setAttribute('name', 'viewport');
 metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
 document.head.appendChild(metaViewport);
 
-// Set title
-document.title = 'Medicura Integrative Institute';
+// // Set title
+// document.title = 'Medicura Integrative Institute';
 
-var preloadStylesheet = document.createElement('link');
-preloadStylesheet.rel = 'preload';
-preloadStylesheet.as = 'style';
-preloadStylesheet.href = '../styles.css';
-preloadStylesheet.onload = function () {
-  this.rel = 'stylesheet';
-};
-document.head.appendChild(preloadStylesheet);
+// var preloadStylesheet = document.createElement('link');
+// preloadStylesheet.rel = 'preload';
+// preloadStylesheet.as = 'style';
+// preloadStylesheet.href = '../styles.css';
+// preloadStylesheet.onload = function () {
+//   this.rel = 'stylesheet';
+// };
+// document.head.appendChild(preloadStylesheet);
 
-// Fallback for older browsers
-var noscriptFallback = document.createElement('noscript');
-noscriptFallback.innerHTML = '<link rel="stylesheet" href="../styles.css">';
-document.head.appendChild(noscriptFallback);
+// // Fallback for older browsers
+// var noscriptFallback = document.createElement('noscript');
+// noscriptFallback.innerHTML = '<link rel="stylesheet" href="../styles.css">';
+// document.head.appendChild(noscriptFallback);
 
-var preloadResponsive = document.createElement('link');
-preloadResponsive.rel = 'preload';
-preloadResponsive.as = 'style';
-preloadResponsive.href = '../css/responsive.css';
-preloadResponsive.onload = function () {
-  this.rel = 'stylesheet';
-};
-document.head.appendChild(preloadResponsive);
+// var preloadResponsive = document.createElement('link');
+// preloadResponsive.rel = 'preload';
+// preloadResponsive.as = 'style';
+// preloadResponsive.href = '../css/responsive.css';
+// preloadResponsive.onload = function () {
+//   this.rel = 'stylesheet';
+// };
+// document.head.appendChild(preloadResponsive);
 
-var noscriptResponsive = document.createElement('noscript');
-noscriptResponsive.innerHTML = '<link rel="stylesheet" href="../css/responsive.css">';
-document.head.appendChild(noscriptResponsive);
+// var noscriptResponsive = document.createElement('noscript');
+// noscriptResponsive.innerHTML = '<link rel="stylesheet" href="../css/responsive.css">';
+// document.head.appendChild(noscriptResponsive);
 
 // Create and append font links
 var linkFonts1 = document.createElement('link');
